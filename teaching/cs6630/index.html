@@ -1,0 +1,3444 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CS-5630/6630 | Visualization</title>
+<link href="../teaching.css" rel="stylesheet" type="text/css" />
+
+
+<script language="JavaScript" type="text/javascript">
+<!-- Copyright 2005, Sandeep Gangadharan -->
+<!-- For more free scripts go to http://www.sivamdesign.com/scripts/ -->
+<!--
+if (document.getElementById) {
+document.writeln('<style type="text/css"><!--')
+document.writeln('.texter {display:none} @media print {.texter {display:block;}}')
+document.writeln('//--></style>') }
+
+function openClose(theID) {
+if (document.getElementById(theID).style.display == "block") { document.getElementById(theID).style.display = "none" }
+else { document.getElementById(theID).style.display = "block" } }
+// -->
+</script>
+
+
+</head>
+
+<body>
+    
+
+
+<h1>CS-5630/6630 | Visualization | Fall 2014 </h1>
+
+
+<div id="topper">
+  
+
+    <div id="about_imgs">
+  <table width="0" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td><img src="images/abyss_explore.png" width="125" height="125" /></td>
+    <td><img src="images/flow.png"width="125" height="125" /></td>
+    <td><img src="images/mizbee_thumbnail.png" width="125" height="125" /></td>
+    <td><img src="images/volume-rendering.jpg" width="125" height="125" /></td>
+  </tr>
+</table>
+  </div>
+
+  <div id="info">
+  <b>INSTRUCTOR:</b> <a class="nav" href="http://www.cs.utah.edu/~miriah/">Miriah Meyer</a> <br/>
+  <b>TIME:</b> T/Th 9:10-10:30am <br/>
+  <b>PLACE:</b> L102 WEB <br/>
+  <b>OFFICE HRS:</b> T 1-3pm, WEB 4887<br/><br/>
+    <b>TA:</b> <a class="nav"
+  href="mailto:abigelow@cs.utah.edu">Alex Bigelow</a> <br/>
+     <b>OFFICE HRS:</b> W 3-5pm, WEB 3760<br/><br/>
+    <b>TA:</b> <a class="nav"
+  href="mailto:hiteshr@cs.utah.edu">Hitesh Raju </a> <br/>
+     <b>OFFICE HRS:</b>Th 12-2pm, MEB 3115 #5<br/><br/>
+    </div>
+   
+  </div>
+
+
+  <div id="plainpage">
+
+    <div id="menu">
+      <div class="options">
+	<a class="navb" href="#schedule">SCHEDULE</a> |
+	<a class="navb" href="#syllabus">SYLLABUS</a> |
+	<a class="navb" href="#projects">ASSIGNMENTS </a> |
+	<a class="navb" href="#exams">EXAMS </a> |
+	<a class="navb" href="#lectures">LECTURES</a> |
+       <!--  <a class="navb" href="#presentations">PRESENTATIONS</a> | -->
+<!-- 	<a class="navb" href="#participation">PARTICIPATION</a> | -->
+        <a class="navb" href="resources.html">RESOURCES</a> </div> 
+  <hr />
+  </div>
+
+  <p>The goal of this course is to introduce students to the
+  principles, methods, and techniques for effective visual analysis of
+  data. Students will explore many aspects of visualization, including
+  techniques for both spatial (eg. gridded data from simulations and
+  scanning devices) and nonspatial data (eg. graphs, text,
+  high-dimensional tabular data). The course begins with an overview
+  of principles from perception and design, continues with a framework
+  for discussing, critiquing, and analyzing visualizations, and then
+  focuses on visualization techniques and methods for a broad range of
+  data types. Students will acquire hands-on experience using cutting
+  edge visualization systems as well as programming interactive visual
+  analysis tools. </p> 
+  
+  <!-- <p>This course was previously known at Scientific -->
+ <!--  Visualization and is under going a curriculum change.  -->
+ <!-- The course syllabus and schedule are still tentative and -->
+ <!--  subject to change. </p> -->
+
+<a name="schedule"></a>
+<div id="project_group">
+<h1 > schedule </h1>
+
+  <table id="papers" >
+    <tr class="toprow">
+        <td class="leftcolnb">week</td>
+	<td class="midcol">date</td>
+        <td class="data">topic</td>
+	<td class="midcol">date</td>
+        <td class="data">topic</td>
+	<td class="data">homework</td>
+ 
+    </tr>
+    <tr>
+        <td class="leftcol">1</td>
+	<td class="midcol">8/26</td>
+        <td class="data"><a class="nav" href="#L1">Introduction</a></td>
+	<td class="midcol">8/28</td>
+        <td class="data"><a class="nav" href="#L2">Design principles</a></td>
+	<td class="data"><a class="nav" href="#critiques">Design critiques</td>
+    </tr>
+    <tr>
+        <td class="leftcol">2</td>
+	<td class="midcol">9/2</td>
+        <td class="data"><a class="nav" href="#L3">Perception</td>
+	<td class="midcol">9/4</td>
+        <td class="data"><a class="nav" href="#L4">Data types & Intro
+    to Tableau</td>
+	<td class="data"><a class="nav" href="#data-exploration">Data
+    exploration | out Th | due in 1.5 weeks</td>
+    </tr>
+    <tr>
+        <td class="leftcol">3</td>
+	<td class="midcol">9/9</td>
+        <td class="data"><a class="nav" href="#L5">Visual encodings</td>
+	<td class="midcol">9/11</td>
+        <td class="data"><a class="nav" href="#L6">Color</td>
+    </tr>
+    <tr>
+        <td class="leftcol">4</td>
+	<td class="midcol">9/16</td>
+        <td class="data"><a class="nav" href="#L7">Intro to Processing</td>
+	<td class="midcol">9/18</td>
+        <td class="data"><a class="nav" href="#L8.5">Processing lab day</td>
+	<td class="data"><a class="nav" href="#time-series">Time
+    series | out T | due in 2 weeks</td>
+    </tr>
+    <tr>
+        <td class="leftcol">5</td>
+	<td class="midcol">9/23</td>
+        <td class="data"><a class="nav" href="#L8">Tasks & interaction</td>
+	<td class="midcol">9/25</td>
+        <td class="data"><a class="nav" href="#L9">Views</td>
+    </tr>
+    <tr>
+        <td class="leftcol">6</td>
+	<td class="midcol">9/30</td>
+        <td class="data"><a class="nav" href="#L10">Focus+context</td>
+	<td class="midcol">10/2</td>
+        <td class="data"><a class="nav" href="#L11">Filtering & aggregation</td>
+	
+    </tr>
+    <tr>
+        <td class="leftcol">7</td>
+	<td class="midcol">10/7</td>
+        <td class="data">Exam 1: foundations</td>
+	<td class="midcol">10/9</td>
+        <td class="data"><a class="nav" href="#L12">Tabular</td>
+	<td class="data"><a class="nav"
+    href="#parallel-coordinates">Parallel coordinates | out Th | due in
+    3 weeks</td>
+    </tr>
+    <tr>
+        <td class="leftcol">8</td>
+	<td class="midcol">10/14</td>
+        <td class="datai">fall break</td>
+	<td class="midcol">10/16</td>
+        <td class="datai">fall break</td>
+    </tr>
+    <tr>
+        <td class="leftcol">9</td>
+	<td class="midcol">10/21</td>
+        <td class="data"><a class="nav" href="#L13">Trees & graphs</td>
+	<td class="midcol">10/23</td>
+        <td class="data"><a class="nav" href="#L14">Text & sets</td>
+    </tr>
+    <tr>
+        <td class="leftcol">10</td>
+	<td class="midcol">10/28</td>
+        <td class="data"><a class="nav" href="#L15">Maps</td>
+	<td class="midcol">10/30</td>
+        <td class="data"><a class="nav" href="#L16">Grids</td>
+	
+    </tr>
+    <tr>
+        <td class="leftcol">11</td>
+	<td class="midcol">11/4</td>
+        <td class="data"><a class="nav" href="#L17">Isosurfaces</td>
+	<td class="midcol">11/6</td>
+        <td class="data"><a class="nav" href="#L18">3d graphics</td>
+	<td class="data"><a class="nav" href="#vtk1">scalar data |
+    out T | due in 2.5 weeks</td>
+	
+    </tr>
+    <tr>
+        <td class="leftcol">12</td>
+	<td class="midcol">11/11</td>
+        <td class="data"><a class="nav" href="#L19">Volume rendering</td>
+	<td class="midcol">11/13</td>
+        <td class="data"><a class="nav" href="#L20">Transfer functions</td>
+	
+    </tr>
+    <tr>
+        <td class="leftcol">13</td>
+	<td class="midcol">11/18</td>
+        <td class="data"><a class="nav" href="#L21">Vector fields</td>
+	<td class="midcol">11/20</td>
+        <td class="data"><a class="nav" href="#L22">Visualization models </td>
+	<td class="data"><a class="nav" href="#tfd">transfer functions
+    | out Th | due in 3.5 weeks</td>
+    </tr>
+    <tr>
+        <td class="leftcol">14</td>
+	<td class="midcol">11/25</td>
+        <td class="data"><a class="nav" href="#L23">Tensor fields </td>
+	<td class="midcol">11/27</td>
+        <td class="datai">Thanksgiving</td>
+    </tr>
+    <tr>
+        <td class="leftcol">15</td>
+	<td class="midcol">12/2</td>
+        <td class="data"><a class="nav" href="#L24"> Design studies</td>
+	<td class="midcol">12/4</td>
+        <td class="data"><a class="nav" href="#L25">Molecular animation</td>
+    </tr>
+    <tr>
+        <td class="leftcol">16</td>
+	<td class="midcol">12/9</td>
+        <td class="data"><a class="nav" href="#L26">D3 + other tools </td>
+	<td class="midcol">12/11</td>
+        <td class="data=">Exam 2: techniques</td>
+    </tr>
+    
+    
+    
+</table>
+</div>
+
+<a name="syllabus"></a>
+<div id="project_group">
+<h1>syllabus </h1>
+
+   <table id="syllabus" >
+    <tr>
+        <td class="leftb">prerequisites</td>
+	<td class="data"><p>The prerequisites for this class are 
+    some linear algebra and calculus, as well as some programming
+    experience. If you are unsure please come talk with me. Having taken 
+   CS-5610: Computer Graphics, or its equivalent at another
+    university, is very
+    helpful but not required.  Grad
+    students from other departments with the appropriate background are welcome! </p></td> 
+    </tr>
+   
+
+    <tr>
+        <td class="leftb">required textbooks</td>
+	<td class="data"><p><a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design
+        (advanced version of e-book)</a>, Tamara Munzner, AK Peters, (hardcopy
+        appearing in Oct 2014).</p>
+<!-- <p><a class="nav" -->
+<!--         href="http://www.amazon.com/Visual-Thinking-Kaufmann-Interactive-Technologies/dp/0123708966">Visual -->
+<!--         Thinking for Design</a>, Colin Ware, Morgan Kaufman, 2008.</p> -->
+	</td> 
+    </tr>
+
+    <tr>
+        <td class="leftb">recommended textbooks</td>
+	<td class="data">
+<p><a class="nav"
+        href="http://www.amazon.com/Visual-Thinking-Kaufmann-Interactive-Technologies/dp/0123708966">Visual
+        Thinking for Design</a>, Colin Ware, Morgan Kaufman, 2008.</p>
+	  <p><a class="nav"
+        href="http://www.learningprocessing.com">Learning
+        Processing</a>, Daniel Shiffman, Morgan Kaufmann, 2008.
+	  <a
+        href="http://site.ebrary.com/lib/utah/docDetail.action?docID=10254740"
+        class="nav">(free e-book through the Marriott Library)</a>
+        </p>
+<p><a class="nav"
+        href="http://processing.org/books/">Getting
+        Started with Processing</a>, Casey Reas and Ben Fry, O'Reilly
+        Media, 2010.</p>
+
+	  <p><a class="nav"
+        href="http://www.amazon.com/gp/product/0262182629?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0262182629">Processing: A Programming Handbook 
+for Visual Designers and Artists</a>, Casey Reas and Ben Fry, MIT
+        Press, 2007.
+	  <a
+        href="http://site.ebrary.com/lib/utah/docDetail.action?docID=10185583"
+        class="nav">(free e-book through the Marriott Library)</a>
+        </p>
+	</td> 
+    </tr>
+
+
+     <tr>
+        <td class="leftb">grading</td>
+	<td class="data"> <p>Grades in this course will be determined by:
+	  <ul> <li> 70% <a class="nav" href="#projects">assignments</a>
+	  <ul><li> 5% design critique
+	    <li> 10% data exploration
+	    <li> 10% time series
+	    <li> 15% parallel coordinates
+	    <li> 15% scalar data
+	    <li> 15% transfer function design
+	  </ul>
+	  <li> 25% <a class="nav" href="#exams">exams</a>
+	  <ul><li> 12.5% exam 1
+	    <li> 12.5% exam 2
+	  </ul>
+	  <li> 5% participation</a>
+	</ul></p>
+	<p>
+There will be no final examination in this course. The weighting of
+        the assignments may change as the semester goes on. Final
+        letter grades will be determined based on a grading
+        curve. Last year's ranges are <a class="nav" href="./grade-range-2013.txt">here</a> -- note that this is not
+        necessarily (and most likely not exactly) what the ranges will be this
+        year, but I've put it up for reference.</p>
+	  </td>
+    </tr>
+
+    <tr>
+        <td class="leftb">late policy</td>
+	<td class="data"> <p>For each day that an assignment is turned
+        in late I will deduct 10% off the total possible points. That
+        is, one-day late is 10% off, two-days is 20%, etc. For example, if you
+        turn in an assignment 3 days late, the max number of points
+        (out of 100) that you can receive is 70.
+	  </p>
+	  </td>
+    </tr>
+    
+    <tr>
+        <td class="leftb">class websites</td>
+	<td class="data"> 
+	  - <a class="nav" href="http://www.eng.utah.edu/~abigelow/bulletinBoard/">design
+        critique & class forum</a> | forum for posting design
+        critiques as well as for class discussions<br/>
+	  - <a class="nav"
+        href="https://docs.google.com/spreadsheet/ccc?key=0AndgAgJZC5RDdHcxakZYNkdJV05UNG9yYjNoa1NuNUE#gid=0">design
+        critique sign-up</a> | for scheduling the weekly
+        critiques<br/>
+	  <!-- - <a class="nav" href="https://utah.instructure.com/courses/294434/discussion_topics">class -->
+        <!-- forum</a> | Canvas site for discussing all things -->
+        <!-- visualization with your classmates<br/> -->
+	  </td>
+    </tr>
+
+     <tr>
+        <td class="leftb">cheating policy</td>
+	<td class="data"> 
+	  You are required to complete all of the assignments on your own --
+  this includes the coding and write-up. In some assignments we
+  indicate parts where you are free to use libraries or source-code
+  that you find, but you MUST cite your sources both in the code and
+  in the write-up. Otherwise, the code must be your own. You are
+  welcome to discuss topics with your classmates, but you may not
+  share implementation details. </p>
+
+<a class="nav"
+  href="http://www.cs.utah.edu/graduate/cheating_policy">School
+  of Computing Policy Statement on Academic Misconduct</a>
+	  </td>
+    </tr>
+   
+</table>
+</div>
+
+  <a name="projects"></a>
+<div id="project_group">
+<h1>assignments </h1>
+
+  <table id="syllabus" >
+    <tr>
+      <a name="critiques"></a>
+        <td class="leftb">critique</td>
+	<td class="data">
+	 <p> <b>Rolling due dates throughout semester -- <a class="nav"
+        href="https://docs.google.com/spreadsheet/ccc?key=0AndgAgJZC5RDdHcxakZYNkdJV05UNG9yYjNoa1NuNUE">see the sign-up page for
+    your week to post</a>. </p>
+    <p> Critiques are due on Thursdays and discussions are
+    due by the following Sunday.</b></p>
+
+	  
+	<p>  In this course you will learn about basic visualization
+    design principles and guidelines. The goal of this assignment is
+    to apply your knowledge to visualizations you find. Each week
+    several students will post a design critique on 
+    our <a class="nav"
+        href="http://www.eng.utah.edu/~abigelow/bulletinBoard/forumdisplay.php?fid=3">bulletin board</a>. You are
+	responsible to post one design critique during the semester
+	and to actively participate in a discussion of a new critique each week.
+</p>
+	  <p>
+	  <div onClick="openClose('a1')" style="cursor:hand;
+	    cursor:pointer"><i>more details...</i></div></p>
+ <!-- 	    change "a" to "a1" -->
+<div id="a1" class="texter">
+
+<p> For online discussions, please read the following: <ul>
+    <li> <a class="nav" href="netiquette.html"> netiquette </a> </li> </ul>
+
+	   <p>
+	  For your critique, find an interesting visualization from
+    one of the following types of sources:
+	  <ul><li>textbook</li>
+	    <li>science magazine (Nature, Science, Scientific
+    American, ...)</li>
+	    <li>magazine or newspaper (Newsweek, The Economist, NY
+    Times, USA Today, ...)</li>
+	    </ul>
+	    You may not use papers or textbooks on visualization. Go to original sources used by
+    practitioners and researchers. For this assignment, please do not
+    use examples pulled from the web except from sites in the above
+	  categories.
+	  </p>
+<p> Once you have selected your visualization, explain the data being
+    shown (type and semantics) and the visual encodings used -- put into
+    words what the visualization is trying to show. Next, critique the
+    visualization: what works and what doesn't? Is the visualization
+    clear or is it misleading? Do you like it (or not), and why? What could be
+    improved? Compose your explanation and critique in 3-4 paragraphs
+    and post your text and visualization in a 
+    <a href="http://www.eng.utah.edu/~abigelow/bulletinBoard/newthread.php?fid=3" class="nav">new thread</a>.
+    Please format your thread title like this:
+    <ul><li>Week 4: (insert title of the visualization you're critiquing)</li></ul></p>
+    
+<p> Each week you are required to actively participate in one of the
+    new threads for that week (except for the week that you are
+    posting a critique). Your 
+    comments should be thoughtful; a single sentence saying "I like it"
+    is not enough! Do you agree with the critique? If so, why (or, why not)?
+    Did the critique miss anything? Did you learn something new? Please be
+    constructive, not critical. Your peers will be discussing your critique as well! </p>
+
+<p><b>Grading</b><br/>
+    We will check that the group thread has been created by midnight
+    each Thursday -- the late policy applies to critiques as
+    well. Your grade will be based on how well you describe and
+    critique the visualization you post based on the language and
+    concepts we have covered in class. Additionally, we will check that each class
+    member has commented on a new thread before midnight each
+    Sunday. If you posted a critique for the week you do not need to
+    comment on another critique. However, 
+    you should participate in the discussion on your thread;
+    don't leave a good discussion hanging, especially if there are questions!
+    Your bulletin board activity each week will be part of the participation component of your final grade.</p>
+    
+</div>
+
+ </td>
+ </tr>
+
+ <tr>
+   <a name="data-exploration"></a>
+        <td class="leftb">data exploration</td>
+	<td class="data">
+<p>	  <b> Due on Tuesday, Sept 16th at midnight</b></p>
+<p>
+	  A variety of digital tools have been designed to help users
+        visually explore data sets and confirm or disconfirm
+        hypotheses about the data. The task in this assignment is to
+        use an existing visualization tool to formulate and answer a
+        series of specific questions about a data set of your
+        choice. After answering the questions, you should create a
+        final visualization that is designed to communicate your findings.
+        You should maintain a (digital) notebook
+        that documents all the questions you asked and the steps you
+        performed from start to finish. The goal of this assignment is
+        not to develop a new visualization tool, but to better understand
+        the process of using visualizations to perform
+        exploratory data analysis.</p> 
+
+
+	  <p>
+	  <div onClick="openClose('a2')" style="cursor:hand;
+	    cursor:pointer"><i>more details...</i></div></p>
+<!-- 	    change "a" to "a2" -->
+<div id="a2" class="texter">
+    
+<p><b>Visualization Tool</b><br/>
+For this assignment you will be using
+<a class="nav" href="http://www.tableausoftware.com/">Tableau</a>,
+a commercial database visualization tool that supports many different ways to
+interact with data. One goal of this assignment is to provide you with the skill
+to learn and evaluate the effectiveness of tools like Tableau.
+
+  
+
+<p> <i>(For students wishing to install Tableau on their personal computer...)</i>
+  We have a
+class license available <a class="nav" href="./protected/license.html">here</a>
+(OS X and Windows are supported). The license will last for one year. </p>
+
+<p> <i>(For students wishing to use Tableau in a computer
+  lab...)</i> Tableau has also been installed in the Engman Lab (WEB L210) on the
+ten closest computers to the Help Desk: LAB5-82 through LAB5-91. When you
+open Tableau, it will ask you to simply register your email. To access this
+lab, you will want to create an account and register your U-Card through the
+<a class="nav" href="http://www.cade.utah.edu/usertools"> CoE user tools</a>. </p>
+
+<p>You can find a wealth of information for Tableau online: <ul>
+    <li> <a class="nav" href="http://www.tableausoftware.com/learn/tutorials/on-demand/introduction-tableau"> Introduction to Tableau Video </a> </li>
+    <li> <a class="nav" href="protected/BirdStrikesTutorial.twbx"> Tableau Tutorial Workbook </a> </li>
+    <li> <a class="nav" href="http://onlinehelp.tableausoftware.com/current/pro/online/en-us/help.htm#default.html"> Tableau 8.0 Help </a> </li>
+    <li> <a class="nav" href="http://www.tableausoftware.com/support/manuals/quickstart"> Tableau Quickstart Guides </a> </li>
+    <li> <a class="nav"
+    href="http://www.tableausoftware.com/learn/training"> Tableau
+    Online Training </a> </li> </ul>
+
+    <p>Tableau's <a class="nav" href="http://www.tableausoftware.com/data-visualization-software">data visualization software</a> is provided through the Tableau for Teaching program. 
+
+<p><b>Data Sets</b><br/>
+Now that you have a visualization tool, you need data to explore!
+We have provided the following two data sets and encourage you to use
+one of them in order to focus more of your time on exploring and analyzing
+the data. That said, you are welcome to use a different data set if you prefer;
+please contact the course staff if you are unsure about your
+    choice. Please note the data set you have chosen in your notebook.</p> 
+
+<p><i>movie data:</i>
+This data set contains information on a large sample of movies.
+The data includes the movie budget and revenue from different sources as well as ratings
+from <a class="nav" href="http://www.rottentomatoes.com/">RottenTomatoes</a>
+and <a class="nav" href="http://www.imdb.com/">IMDB</a>.</p>
+
+<p>
+Download: <a class="nav"
+        href="./protected/movies.csv">csv file</a><br/>
+
+Source: <a class="nav"
+        href="http://hci.stanford.edu/jheer/">Jeff Heer</a></p>
+
+<p><i>flight data:</i>
+FAA data describing every commercial flight during the month of
+December 2009. For detailed descriptions of each data column in the
+attached file, please see
+<a class="nav" href="http://www.transtats.bts.gov">www.transtats.bts.gov</a>.
+You are also welcome to download your own version of the file
+(which might include columns or time spans that were left out from this data set)
+directly from
+<a class="nav"
+        href="http://www.transtats.bts.gov">www.transtats.bts.gov</a>.</p> 
+
+<p>Download: <a class="nav"
+        href="./protected/flights-2009-12.zip">csv file</a><br/>
+
+Source: <a class="nav"
+        href="http://www.transtats.bts.gov">www.transtats.bts.gov</a></p>
+
+<p>Many other sources for data sets can be found on the <a class="nav"
+        href="./resources.html">resources page</a>.</p>
+
+<p><b>Formulate a Question</b><br/>
+Before exploring the data, pose an initial question that you would like
+to answer. For example: is there a relationship between melting point and
+atomic number? Are the brightness and color of stars correlated? Are there
+different patterns of nucleotides in different regions of human DNA? </p>
+
+<p> Next, assess the fitness of the data for answering your question.
+Inspect the data -- it is invariably helpful to first look at the raw
+data values. Does the data seem appropriate for answering your question? If
+not, you may need to find a new initial question. Next, does the data need
+to be reformatted or cleaned before you analyze it? Perform any steps
+necessary to clean the data prior to visual analysis. </p>
+
+<p> Write down the initial question clearly in your notebook, and
+describe any data wrangling you had to perform. </p>
+
+<p><b>Data Exploration and Analysis</b><br/>
+After you have an initial question and a data set, construct a visualization
+in Tableau that provides a potential answer to your question. As you construct
+the visualization, you will find that your question evolves -- often it will
+become more specific. Keep track of this evolution and further questions
+that occur to you along the way in your notebook. Also, keep copies
+of any intermediate visualizations you generate, and please include in your notebook 
+several images of the more important visualizations that helped you refine
+your question. </p>
+
+<p>NOTE: We are interested in seeing the evolution of your
+thoughts and investigation. We are not interested in just a final
+answer! Please document your discovery progress.</p>
+
+<p> Once you have answered all the questions to your satisfaction,
+think of a way to present the data and the answers as clearly as
+possible. Include an image of your final visualization in your
+notebook, along with a caption and a paragraph description of how it
+answers the question you posed. Think 
+of the figure, the caption, and the paragraph as material you might include
+in a research paper. </p>
+
+<p><b>Submission Details</b><br/>
+This assignment must be submitted as a PDF file via 
+<a class="nav" href="https://utah.instructure.com/courses/244719/assignments">Canvas</a>.</p>
+  
+<p><b>Grading</b><br/>
+  You will be graded on how well you address the following:
+  <ol>
+<li><b>05 pts:</b> Data source specified</li>
+<li><b>15 pts:</b> Initial question and description of any necessary data wrangling</li>
+<li><b>60 pts:</b> Description of whether / how / why / when the question
+  evolves, along with screenshots</li>
+<li><b>20 pts:</b> Final image with caption and description</li>
+  </ol>
+  Please format your notebook so these are easy to find; effectively communicating information
+  to humans is an essential part of this course! If we can't find something in a reasonable
+  amount of time, you will not recieve credit for it. Here's an
+  <a href="http://www.eng.utah.edu/~abigelow/Example.pdf" class="nav">example</a> of the kind of thing
+  we're looking for.</p>
+  
+</div>
+
+	  </td>
+	  </tr>
+	  
+  <tr>
+     <a name="time-series"></a>
+        <td class="leftb">time series</td>
+	<td class="data">
+	  <p>	  <b> Due on Tuesday, Sept 30th at midnight</b></p>
+
+	  <p>Time series data show up all over the place: in finance,
+	  medicine, climatology, history, and on and on. In this
+	  assignment you will develop an interactive viewer for
+	  looking at time series that explores several different
+	  visual representations. The main goal is to get your feet
+	  wet with the
+      <a class="nav" href="http://processing.org">Processing programming environment</a>,
+      specifically the functionality for: drawing basic primitives;
+      handling mouse and keyboard events; and working with text.
+
+	  <p>
+	  <div onClick="openClose('a3')" style="cursor:hand;
+	    cursor:pointer"><i>more details...</i></div></p>
+<!-- 	    change "a" to "a3" -->
+<div id="a3" class="texter">
+
+<p> In this assignment, you will be implementing the code described in
+Chapter 4 of Ben Fry's book:
+<a class="nav" href="http://www.amazon.com/gp/product/0596514557?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0596514557"> <i> Visualizing Data</i></a>;
+we have provided you with a
+<a class="nav" href="./protected/VisualizingData-4.pdf"> copy of the chapter</a>.
+Please note that some of the scanned figures are distorted; thus, your
+visualization may look slightly different than what you see, which is
+okay! For each of the steps below, include a screenshot of your
+visualization and answer the questions in a (digital) notebook (similar to
+the DATA EXPLORATION assignment). You will be submitting this notebook and
+the final version of your code for the assignment. </p>
+
+<p> Before reading the chapter, download and install
+<a class="nav" href="https://processing.org/download/?processing">Processing</a>,
+and explore the
+<a class="nav" href="http://processing.org/learning/topics/">examples online</a>.
+We highly recommend you go through some of the
+<a class="nav" href="http://processing.org/learning/">tutorials</a>,
+in particular the first four at the <i>Beginner</i> level. </p>
+
+<p> Complete the following steps. Feel free to make changes to the
+design of the visualization as you see fit, and, if you do, be sure to justify
+those changes in your notebook. <ol>
+  <li> Download
+  <a href="protected/timeSeries.zip" class="nav">timeSeries.zip</a>
+  and extract it. This will be your project directory; to add code, simply open
+  <tt> timeSeries.pde </tt> in Processing. No need to
+  download additional files, just start programming! </li>
+  
+  <li> Read pages 54-72, and implement the code described in the
+  book. <b>Change</b> the numerical labels on the x- and y-axes to use the
+  Georgia font, and all of the text titles to use the Verdana font.
+  <b>Choose</b> a font size that seems most appropriate to you.
+  <b>Change</b> the y-axis title to run along the axis, i.e. rotate
+  it by 90-degrees (hint: look under the Transform section of the
+  <a class="nav" href="http://processing.org/reference/">reference page</a>).
+  <b>Make</b> any other changes you feel are appropriate. What did
+  you change and why? </li>
+  
+  <li>Read pages 73-82, and implement the code described in the book.
+  <b>Allow</b> the user to select which representation to render the data
+  using the keyboard. Specifically, let <tt>1</tt> select dots; <tt>2</tt>
+  select connected dots; <tt>3</tt> select line chart; <tt>4</tt> select
+  filled chart. (hint: look under the Input section of the
+  <a class="nav" href="http://processing.org/reference/">reference page</a>).
+  <b>Use</b> the Georgia font for the highlight tags on mouse rollover.
+  What representation do you think is the most appropriate, and why? </li>
+  
+  <li> Read pages 83-93, and implement the code described in the book.
+  You may <b>skip</b> the <i>Better Tab Images</i> section if you want.
+  For the interpolation, a new <tt>Integrator</tt> class has been provided for
+  you. Is this tool an effective way to look at time series data?
+  Why or why not? What is missing? How would you change the tool to support
+  looking at time series with many time points (like > 1000)? </li>
+  
+  <li> Next, add an additional tab for a summary view of <i> all </i> the time
+  series data displayed at once. Choose a method for displaying the time series
+  data that you feel is most effective for displaying multiple series. You do
+  not need to support mouseover in this view, but you can if you wish! Why did
+  you choose this visualization method? </li>
+  
+  <li> <b> For 6630 students only. </b> A common statistical technique for time
+  series data (and scatterplots in general) is finding a regression curve. The
+  simplest form of regression is
+  <a class="nav" href="http://en.wikipedia.org/wiki/Simple_linear_regression"> linear regression</a>.
+  You will be using linear regression to get an equation of a line and mapping this
+  onto each time series plot. To get the equation of the line, you are welcome to
+  pre-compute this in any statistical software (e.g. Excel, R, etc.), use an existing
+  library in Processing or Java, or
+  <a href="https://www.khanacademy.org/math/probability/regression/regression-correlation/v/regression-line-example" class="nav">implement the algorithm</a>
+  in your code. In your visualization, overlay a regression line on each of the
+  individual time series plots. Is there any representation of the time series
+  data where a regression line is less effective? Why? </li> </ol>
+
+  <p><b>Recommended Books</b><br/>
+  <ul><li><a class="nav"
+        href="http://www.amazon.com/gp/product/0596514557?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0596514557">Visualizing
+  Data</a>, by Ben Fry</li>
+  <li><a class="nav"
+        href="http://www.amazon.com/gp/product/144937980X?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=144937980X">Getting
+  Started with Processing</a>, by Casey Reas and Ben Fry</li>
+  <li><a class="nav"
+        href="http://www.amazon.com/gp/product/0123736021?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0123736021">Learning
+  Processing</a>, by Daniel Shiffman <a
+        href="http://site.ebrary.com/lib/utah/docDetail.action?docID=10254740"
+        class="nav">(free e-book through the Marriott
+  Library)</a></li>
+  <li><a class="nav"
+        href="http://www.amazon.com/gp/product/0262182629?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0262182629">Processing: A Programming Handbook 
+for Visual Designers and Artists</a>, Casey Reas and Ben Fry 
+	  <a
+        href="http://site.ebrary.com/lib/utah/docDetail.action?docID=10185583"
+        class="nav">(free e-book through the Marriott Library)</a></li>
+  </ul>
+
+<p><b>Submission Details</b><br/>
+
+In addition to your PDF notebook, you will be submitting your final Processing code for this assignment.
+Please <b>ZIP</b> up your entire project directory (code and data) to include
+in your submission. We expect to be able to run your visualization as
+  is. Make sure that your file paths are relative!!! Both the
+PDF and ZIP archive should be submitted via
+<a class="nav" href="https://utah.instructure.com/courses/244719/assignments">Canvas</a>.</p>
+
+<p><b>Grading</b><br/>
+  You will be graded on how well you address the following:
+  <ol>
+<li><b>20 pts:</b> When unzipped, project runs without errors or modifications on our part</li>
+<li><b>05 pts:</b> Axes and rollovers use the Georgia font, text titles use Verdana</li>
+<li><b>05 pts:</b> Rotated y-axis label</li>
+<li><b>10 pts:</b> Keyboard selection for different chart types</li>
+<li><b>10 pts:</b> Justification of best chart type</li>
+<li><b>10 pts:</b> Analysis of tool</li>
+<li><b>15 pts:</b> Additional summary tab</li>
+<li><b>10 pts:</b> Justification of summary chart</li>
+<li><b>10 pts:</b>* Regression line</li>
+<li><b>05 pts:</b>* Analysis of regression line inclusion</li>
+  </ol>
+  *These are only required for CS 6630 students. For CS 5630 students,
+  your final point total will be scaled to a range of [0,100].<br/><br/>
+  
+  Please format your notebook so these are easy to find; don't forget the appropriate screenshots!
+  If we can't find something in a reasonable
+  amount of time, you will not recieve credit for it.</p>
+  
+</div>
+
+	  
+	  </td>
+	  </tr>
+
+	  <tr>
+	     <a name="parallel-coordinates"></a>
+        <td class="leftb">parallel coordinates</td>
+	<td class="data">
+	   <p>	  <b> Due on Thursday, Oct 30th at midnight</b></p>
+<p>
+Exploring multidimensional data is a fundamental challenge in
+	  visualization. In this assignment you will implement a
+	  widely used visual representation: parallel coordinates. The
+	  goal of the assignment is two-fold. First, you will gain experience designing
+	  and implementing a variety of interaction mechanisms to support
+	  data exploration. And second, you will evaluate the
+	  effectiveness of parallel coordinates on a variety of
+	  multidimensional data sets. This assignment promotes sketching
+      out some ideas on paper before coding interaction and furthers
+      your understanding and experience programming in Processing. </p>
+	  
+<p>
+	  <div onClick="openClose('a4')" style="cursor:hand;
+	    cursor:pointer"><i>more details...</i></div></p>
+<!-- 	    change "a" to "a4" -->
+<div id="a4" class="texter">
+
+<p> First, you will want to understand what parallel coordinates are.
+Please read the following short discussions: <ul>
+  <li><a class="nav"
+        href="http://www.cs.ubc.ca/~tmm/courses/infovis/book/vispmp-draft-4.pdf">Ch. 7.6.2 Parallel Layouts,</a>
+	 in Visualization
+        Analysis and Design by Tamara Munzner<br/> </li> 
+  <li><a class="nav" href="./protected/DataVisualization-11.6.pdf">Section 11.6
+  <i>Multivariate Data Visualization,</i></a> in Data Visualization by Alexandru Telea </li> 
+</ul> </p>
+
+<p> Next, play around with this
+<a href="http://bl.ocks.org/jasondavies/raw/1341281/" class="nav">nice example</a>
+written by Jason Davies in the
+<a href="http://d3js.org/" class="nav">D3.js language</a>.
+Different data can be seen in the
+<a href="http://syntagmatic.github.io/parallel-coordinates/examples/veterans.html" class="nav"><i>veterans</i></a>
+and <a href="http://exposedata.com/parallel/" class="nav"><i>nutrient contents</i></a>
+examples by Kai Chang. In these examples, note that you can
+filter along an axis and rearrange axes. Think about what you like
+in the designs and what you would want to do differently. There are
+many different ways to encode, layout, and interact with data in a
+parallel coordinates plot -- these examples are just one way to do
+this. There is no "right" answer! </p>
+
+<p> <b> Data Wrangling </b> <br/>
+To start, download the <i> cars </i> data set, provided below. Inspect
+the data -- it does not come in the <i>.csv</i> file format that
+you worked with in the TIME SERIES assignment. The data needs to be
+cleaned and processed to get it into Processing. You are welcome to
+re-use the <tt> FloatTable.pde </tt> file reader from the previous
+assignment to import the data. </p> 
+
+<p> <b> Basic Visualization </b> <br/>
+Before writing code, pull out a piece of paper. Create a paper
+prototype of what you envision the visualization will look like.
+Consider the basic items that you will render: like axes, data,
+title, labels, tick marks, etc. Think about how you plan to handle
+overlapping lines (e.g. use transparency). Scan or take a picture of
+your paper prototype and put it in your notebook. </p>
+
+<p> Next, create a Processing sketch for the assignment based on your
+paper prototype. Get the
+<i> cars </i> data set imported (feel free to use <tt> FloatTable.pde</tt>),
+and write a basic renderer to create a static parallel coordinates plot.
+In your sketch, be sure to label everything you can: titles, tick marks,
+ranges, etc. In your notebook, include a screenshot of this static
+version of your visualization. Were you able to include everything that
+you had thought of in your paper prototype? Please record some of your
+thoughts on this sketching and coding process in your notebook. </p>
+
+<p> <b> Interactivity </b> <br/>
+Now, for the fun part! Parallel coordinates are hardly useful without
+interactivity. Instead of worrying about how to code interaction, first
+set the computer aside and pull out another piece of paper. Think about
+how you want to interact with the axes and the data. How would you design
+these interactions to make them effective? At a minimum, you must support
+the following basic interactions: <ul>
+  <li> filter the data across multiple attributes </li>
+  <li> reorder / rearrange the axes </li>
+  <li> invert the axes </li> </ul> </p>
+
+<p> For each of these interactions (and any more you want),
+draw a series of story boards, i.e. a sequence of sketches that
+illustrate the steps behind an interaction in the visualization.
+Be sure to show any interface elements that the user will interact with.
+This just needs to be enough to give you an idea of what you want to
+write in the code. Then, create a digital copy of your story boards,
+and add each of the story boards to your notebook with a
+brief description of what is occurring in each story board. </p>
+
+<p> Next, implement your ideas! </p>
+
+<p> In your notebook, include a screenshot of your interactive
+visualization, describe how your interactivity works, and justify
+your design decisions using concepts we have covered in the class.
+Does your design work? What could be improved, given more time, and how?
+Did you come up with any interactivity mechanisms to support tasks other
+than those described above? </p>
+
+<p> <b> Clustering </b> (<i>for 6630 students only | extra credit for
+  5630 students</i>) <br/>
+It is often useful to aggregate multidimensional data into clusters
+of similar data points. A very simple method for aggregation is
+<a class="nav" href="http://en.wikipedia.org/wiki/K-means_clustering">
+k-means clustering</a>. For this portion of the assignment you must
+use k-means clustering to aggregate data, and develop a way to show
+the clusters in your visualization. </p>
+
+<p> You may use existing k-mean clustering algorithms to create your
+clusters, or be adventurous and implement it yourself (it is
+straight-forward to do). Experiment with the number of clusters you
+create and find a number that does a good job in creating meaningful
+clusters. We would recommend doing this experimentation in your
+visualization once you implement a visual representation for the clusters. </p>  
+
+<div id="random_imgs">
+  <img src="images/interactive-color-legend.png" width="76" height="200" />
+</div>
+
+<p> The most obvious way to show clusters is to assign each cluster
+a color (hue) and render the data (lines) in the appropriate color
+according to their cluster membership. When encoding categorical data
+with color, however, remember that we can only distinguish a limited
+number of colors -- how many can we actually distinguish? Design your
+visual encoding accordingly. You are free to develop a different way
+to encode the clusters if you would like. However you encode the
+clusters, allow the user to choose to show the clusters, or not.
+Include a screenshot of your visualization with the cluster encoding
+in your notebook along with a description of your encoding method. </p>
+
+<p> <b> extra credit: </b>
+A way to accommodate a limited color palette is by creating an
+interactive color legend. An example is shown in the image on the right.
+This legend allows the user to apply a color to a specific group, or
+have a default color of gray. This visualization widget thus serves
+dual purpose: it works as a legend to inform the user about the encoding,
+and it also lets the user dynamically set the color of each group.
+Implement your own interactive color legend. </p>
+
+<p> <b> Data Exploration </b> <br/>
+Explore at least two data sets (one of which should be the <i>cars</i>
+data set) in your parallel coordinates tool. What interesting
+features can you find? For each data set, document several features
+that you find, and include both a description and a screenshot of
+each in your notebook. </p>
+
+<p> Lastly, critique your parallel coordinate visualization in your
+notebook. What do you think of parallel coordinates as a visualization
+representation? Do you find it easy or hard to use? Could you have
+found those same features without interactivity? What are the limits
+of parallel coordinates for data other than quantitative data, and
+how might you visualize that? </p>
+
+<p> <b> Data Sets </b> <br/>
+We have provided the following two data sets and encourage you to use
+both of them in order to get started quickly and therefore have more
+time to explore the data and develop your visualization tool -- we
+recommend you develop your visualization using the <i> cars </i> data
+set. You are welcome to use a different second data set, if you prefer. </p> 
+
+<p> <i> cars: </i>
+This data set contains information on 406 different cars from the
+<a class="nav" href="http://stat-computing.org/dataexpo/1983.html">
+1983 ASA Data Exposition data set</a>. </p>
+
+<p> Download:
+<a class="nav" href="http://davis.wpi.edu/xmdv/datasets/cars.html">
+repository </a> <br/>
+
+Source:
+<a class="nav" href="http://stat-computing.org/dataexpo/1983.html">
+American Statistical Association </a> </p>
+
+<p> <i> cameras: </i>
+This data set contains information about 1000+ digital cameras and 13
+different attributes.</p> 
+
+<p> Download:
+<a class="nav" href="./protected/cameras.tsv">
+tsv file </a> <br/>
+
+Source:
+<a class="nav" href="https://engineering.purdue.edu/~elm/projects/scatterdice.html">
+the ScatterDice project </a> </p>
+
+<p> Many other data sets can be obtained from
+<a class="nav" href="http://davis.wpi.edu/xmdv/datasets/">
+XmdvTool</a> or
+<a href="http://vincentarelbundock.github.io/Rdatasets/datasets.html" class="nav">
+R data sets</a>. </p>
+
+
+<p><b>Submission Details</b><br/>
+
+As before, you must submit your PDF notebook and ZIP archive of your data and code via
+<a class="nav" href="https://utah.instructure.com/courses/244719/assignments">Canvas</a>.
+We should be able to run your code as is.</p>
+
+<p><b>Grading</b><br/>
+  You will be graded on how well you address the following:
+  <ol>
+    <li><b>10 pts:</b> When unzipped, project runs without errors or modifications on our part</li>
+<li><b>05 pts:</b> What did you have to do to import the cars data set?</li>
+<li><b>05 pts:</b> Paper prototype of basic visualization</li>
+<li><b>20 pts:</b> Implemented basic visualization</li>
+<li><b>05 pts:</b> Storyboards and descriptions of interactivity</li>
+<li><b>25 pts:</b> Implemented interactive visualization</li>
+<li><b>05 pts:</b> Analysis of design</li>
+<li><b>10 pts:</b>* Implementation and description of clustering encoding</li>
+<li><b>10 pts:</b>&dagger; Implementation of interactive color legend</li>
+<li><b>05 pts:</b> Data exploration findings</li>
+<li><b>10 pts:</b> Critique of technique</li>
+  </ol>
+  *These are only required for CS 6630 students, or may be done for
+  extra credit by CS 5630 students. For CS 5630 students, your final
+  point total will be scaled to a range of [0,100] (not including
+  extra credit).<br/>
+  &dagger;This is extra credit for everyone.<br/><br/>
+  
+  Please format your notebook so these are easy to find. If we can't find something in a reasonable
+  amount of time, you will not recieve credit for it.</p>
+  
+  
+</div>
+	  </td>
+	  </td>
+	  </tr>
+
+	  <tr>
+     <a name="vtk1"></a>
+        <td class="leftb">scalar data</td>
+	<td class="data">
+	  <p>	  <b> Due on Thursday, Nov 20th at midnight</b></p>
+
+	  <p>Scalar data defined over a grid is an incredibly common data type, showing up in medical applications,
+	  computational science, and many other places. The purpose of this assignment is to give you experience
+	  with several different ways to visualize scalar data. For this assignment you will create visualizations
+	  of several data sets, all of which are mappings of &#8477;<sup>2</sup>&rarr;&#8477;.</p>
+	  
+<p>
+	  <div onClick="openClose('a5')" style="cursor:hand;
+	    cursor:pointer"><i>more details...</i></div></p>
+<!-- 	    change "a" to "a5" -->
+<div id="a5" class="texter">
+
+<p> <b> Data Reader </b> <br />
+<div id="random_imgs">
+  <figure>
+  <img src="images/scalar-data/test.JPG" width="125" height="125" />
+  <figcaption>FIGURE 1</figcaption>
+  </figure>
+</div>
+This time around, you will be writing your own data reader in Processing to generate an image.
+To start off, you will be using two data sets:
+<a href="protected/scalar-data/test.nrrd" class="nav">test.nrrd</a> and
+<a href="protected/scalar-data/brain.nrrd" class="nav">brain.nrrd</a>.
+Note that this data uses the NRRD file format. You can find the 
+<a href="http://teem.sourceforge.net/nrrd/format.html" class="nav">
+definition of the NRRD file format</a> as well as several different 
+<a href="http://teem.sourceforge.net/nrrd/files/index.html" class="nav">
+example NRRD files</a> online. </p>
+
+<p> It is important to understand what is represented in the header and how this connects
+to the format of the data below the header. In particular, the <i>dimension</i> component
+describes that we have a regular 2-D grid. Also, the <i>sizes</i> component gives us the
+width and height of this grid, respectively. Lastly, the <i>encoding</i> component tells
+us that we have data written as text (human-readable).</p>
+
+<div id="random_imgs">
+  <figure>
+  <img src="images/scalar-data/brain.png" width="125" height="175" />
+  <figcaption>FIGURE 2</figcaption>
+  </figure>
+</div>
+
+<p>After the header, each row of our data represents a single point in the grid. For this
+assignment, each row contains one scalar value. The grid iterates through the x-axis first,
+then the y-axis.</p>
+
+<p>With the NRRD format in mind, write your data reader in Processing that will store the
+data in your sketch. Storing the data in a 2-D array is recommended. For more on 2-D arrays,
+see the corresponding <a href="http://processing.org/tutorials/2darray/" class="nav">
+Processing tutorial</a>. Be sure that you also read in the important values from the header,
+particularly the <i>sizes</i> components, to set the two dimensions of your data array. You
+should only be reading in data during the setup() function, not within your draw() loop. Some
+functions to consider: loadStrings(), for(), split(), and float().</p>
+<p>Once you have imported the data into your sketch, create a grayscale image using the same
+dimensions as the data grid for both of the datasets. See the examples
+in FIGURE 1 and 2 -- NOTE
+that FIGURE 1 has been zoomed in from an 8x8 image so that
+you can see the results. For drawing each data point, we
+recommend using either rect(), point(), or PImage(). Be mindful of your fill() and stroke()
+values in your draw loop. You may wish to add a mouse or key command to save your sketch as
+an image: save().</p>
+
+<p> In your digital notebook, add in your grayscale images, and be sure to answer the following: </p>
+<ul>
+    <li> Was it easy to import the data? </li>
+    <li> What problems did you have? </li>
+</ul>
+
+<p> <b> Applying a Color Map </b> <br />
+<div id="random_imgs">
+  <figure>
+  <img src="images/scalar-data/brain-color.png" width="125"
+  height="175" />
+  <figcaption>FIGURE 3</figcaption>
+  </figure>
+</div>
+Time to apply some color! First, choose an appropriate color map from
+<a href="http://colorbrewer2.org" class="nav">ColorBrewer</a>
+or another source. Interpret this color map into a continuous space; do not use
+a binned color map. One way to do this is to use two or three colors that are
+starting, middle, and ending values for your color map. You will need
+a function that will take a scalar value and then map it to a
+color along your new continuous colormap.</p>
+
+<p> Now, for each scalar value, map or convert these data values into colors using
+your color map. This assigns a color to each pixel of your image. This should
+produce a continuous color image for your data, and look something
+like FIGURE 3. Some functions to consider:
+map(), lerpColor(). </p>
+
+<p> In your digital notebook, add your color mapped image, and be sure to answer: </p>
+<ul>
+  <li> Where did you get your color map? </li>
+  <li> What makes it an appropriate color map for this data? </li>
+</ul>
+
+<p> You may want to experiment with several colormaps. If you do, make
+sure to include screenshots of your work!</p>
+
+<p> <b> Interpolating the Grid </b> <br />
+
+Next, we will make our image larger by changing the size of our Processing sketch.
+Instead of using the sizes of our grid, we will fix the <b>height</b> of our sketch to 800 pixels.
+Keep the same aspect ratio for the grid (preserve the ratio of width to height).</p>
+<p>After creating a larger sketch, map your original data grid values into the appropriate
+pixel values to fill the screen. This will result in an image that
+looks pixelated, as in FIGURE 1. Do this for both datasets. </p>
+
+<p> Keep in mind that Processing expects integers in its size() function, but division
+with integers can result in rounding issues in programming languages. You can always
+convert or cast your data from floating point numbers into integers for this function. </p>
+
+<div id="random_imgs">
+  <figure>
+  <img src="images/scalar-data/brain-color-interp.png" width="263"
+   />
+  <figcaption>FIGURE 4</figcaption>
+  </figure>
+</div>
+
+<p>To smooth out our image, we will perform bilinear interpolation
+of the data. This process first maps every pixel on our
+screen into the data grid, and determines its location in floating
+point. This position will lie between four values of that grid. We
+find an interpolated value using these four grid points and the ratios
+of distances to them. Be mindful of the pixels on the edges of the
+image. Finally, this interpolated color value is looked up in the
+color map. Create an image for both datasets using bilinear
+interpoloation (again, with the images having a width of 800 pixels
+and appropriate aspect ratio). In FIGURE 4 we have a zoomed in region from the brain
+dataset showing the difference between nearest-neighbor (left) and
+bilinear interpolation (right). In FIGURE 5 you can see the results of
+smoothing the test image. Include in your notebook a zoomed in
+region of the brain dataset that shows something similar (but of any
+region of the image). You can
+create these zoomed in images in an image view tool, or in your
+Processing tool.
+</p>
+
+
+<p> In your digital notebook, add the interpolated brain images, as
+well as the comparison to nearest neighbor, and be sure to answer: </p>
+<ul>
+  <li> What, if anything, makes interpolation of your data tricky? </li>
+  <li> Do you notice anything odd about the data? Do any values stick out? </li>
+</ul>
+
+<p> Note that in the next part of the assignment you will be using a
+different technique to visualize this data (isocontours). You will
+need to switch between these two modes use keystrokes. This is an FYI
+for planning how you structure this part of the assignment! </p>
+
+<p> <b> Isocontours using Marching Squares </b> <br />
+<div id="random_imgs">
+  <figure>
+  <img src="images/scalar-data/test-contour.png" width="125"
+  height="125" />
+  <figcaption>FIGURE 5</figcaption>
+  </figure>
+</div>
+Isocontours are another technique for exploring scalar data sets. In 2D, these are
+simply a set of isolines overlaid on your image. For generating isocontours, you will be
+implementing the marching squares algorithm. This algorithm generates isolines along
+the different cells of our data grid. Before you get started with this
+part of the assignment, you will want to read <a href="protected/Telea-2D.pdf" class="nav">these few pages</a> which
+include a step-by-step description of the algorithm.
+</p>
+
+<p> Write your own marching squares algorithm to generate and draw isocontours. Allow
+the user to switch between our color-mapped image and the isocontours using the 'c' key.
+For the isocontours mode, you must draw all the isocontours at a single isovalue.
+To draw isolines in Processing, you can use beginShape()/endShape() or line(). </p>
+
+<div id="random_imgs">
+  <figure>
+  <img src="images/scalar-data/brain-contour.png" width="125"
+  height="175" />
+  <figcaption>FIGURE 6</figcaption>
+  </figure>
+</div>
+
+<p>Note that, you should still keep your display of a fixed height of 800 pixels. However,
+you should isocontour on the original data and then scale up the position of the isocontours
+appropriately. This is <b>not</b> equivalent to isocontouring the bilinearly interpolated data!</p>
+
+<p> To help with debugging focus first on the test dataset. This data set is just random noise,
+but at an isovalue of 32700 it hits all 16 cases of marching
+squares. See the sample image in FIGURE 5 for the properly generated isocontours.</p>
+
+<p> Next, with your working marching squares algorithm, test different isovalues
+on the brain data set. See what values of the data highlight different portions of the
+image. Take note of potentially interesting or uninteresting ranges of this data set.
+We have provided another sample image at isovalue 176 in FIGURE 6. Feel free
+to play around with interactions to set or change isovalues. This can allow you to more
+easily explore the data set, but it is not required. </p>
+
+<p> In your digital notebook, be sure to add an image of the test data set at the same
+isovalue as in FIGURE 5. Additionally, add several images of interesting isovalues you found in the
+brain data set. Be sure to also answer: </p>
+<ul>
+  <li> Are there any problems with your marching squares algorithm? </li>
+  <li> What is an interesting isovalue on the brain data set? Why? </li>
+  <li> Compared to a color map, are there any tasks that isocontours
+  seem more effective for? Why or why not? Which technique do you
+  think is better?</li>
+</ul>
+
+<p> <b> Data Exploration </b> <br />
+Now that you have explored the brain data set, let's look at a new scalar grid!
+We are providing a height field data set, showing the elevation around Mt. Hood:
+<a href="protected/scalar-data/mtHood.nrrd" class="nav">mtHood.nrrd</a>. </p>
+
+<div id="random_imgs">
+  <figure>
+  <img src="images/scalar-data/mtHood.png" width="175" height="175" />
+  <figcaption>FIGURE 7</figcaption>
+  </figure>
+</div>
+
+<p> First, test your color map technique. You can see a sample image
+in FIGURE 7. Play around with your colormaps for this data set and
+choose a colormap that you think is most appropriate. </p>
+
+<p> Next, explore different isocontours. Try to find interesting
+values and patterns that you maybe could not see in the color map. Compare how these contours
+look versus the contours you saw in the brain data set. </p>
+
+<p> In your digital notebook, include a couple images showing your color map and changes
+for the mtHood data set, along with a couple images for isocontours. Additionally, answer
+the following: </p>
+<ul>
+  <li> How did you adjust your color map for the mtHood data set? </li>
+  <li> Did the isocontours in the mtHood dataset differ from the brain data set? Why? </li>
+  <li> For the brain and mtHood data sets, were either color maps or isocontours more effective
+    for either one of these data sets? Why? </li>
+</ul>
+
+<p> <b> Extra Credit 1: Higher Order Interpolation</b><br/>
+Instead of using bilinear interpolation in both your colormapping and
+isocontouring techniques, implement bicubic interpolation. This
+is a different interpolation function for reconstructing data values
+between grid vertices. Obtain
+images using both techniques and compare them. Feel free to try out different
+sizes of images to compare the two interpolation methods. Allow the user to switch
+between bilinear and bicubic interpolation methods using the 'i' key. Include
+sample images of both bilinear and bicubic 
+in your digital notebook, and answer the following: </p>
+<ul>
+  <li> What does bicubic interpolation change in the output image? </li>
+  <li> Does bicubic interpolation make a difference when we have a larger image? </li>
+  <li> Are there any features that bicubic interpolation is better for? </li>
+</ul>
+
+<p></p>
+
+<p> <b> Extra Credit 2: Efficient Coding</b><br/>
+The complete marching squares algorithm can be written in just three
+lines of "real" code. For those of you optimization-lovers out there,
+can you figure this out? Hint: the three lines of Processing code will
+go between beginShape() and endShape() calls. Include your nifty code snippet in
+your digital notebook. </p>
+
+<p> <b> Data Sets </b> <br/>
+We have provided the following three data sets for this assignment.
+They all use the
+<a href="http://teem.sourceforge.net/nrrd/format.html" class="nav">
+    NRRD file format</a>. </p> 
+
+<p> <a href="protected/scalar-data/brain.nrrd" class="nav">brain.nrrd</a>:
+This data set contains scalar values measured from a 2D slice of a brain. </p>
+
+<p> <a href="protected/scalar-data/test.nrrd" class="nav">test.nrrd</a>:
+This data set is a randomly-generated 2D grid of noise. <i> source: </i>
+<a href="http://people.cs.uchicago.edu/~glk/" class="nav">Gordon Kindlmann</a> </p>
+
+<p> <a href="protected/scalar-data/mtHood.nrrd" class="nav">mtHood.nrrd</a>:
+This data set contains scalar values measured from a 2D spatial grid
+which represents a height field around Mount Hood in Oregon. </p>
+
+<p> <b> Recommended Resources </b> <br/> <ul>
+  <li>
+    <a href="http://processing.org/reference/" class="nav">Processing Language Reference</a>
+  </li>
+  <li>
+    <a href="http://teem.sourceforge.net/nrrd/files/index.html" class="nav">NRRD File Format Examples</a>
+  </li>
+  <li>
+    <a href="http://en.wikipedia.org/wiki/Bilinear_interpolation" class="nav">Bilinear Interpolation</a>
+  </li>
+  <li>
+    <a href="http://en.wikipedia.org/wiki/Bicubic_interpolation" class="nav">Bicubic Interpolation</a>
+  </li>
+</ul> </p>
+
+<p><b>Submission Details</b><br/>
+
+As before, you must submit your PDF notebook and ZIP archive of your data and code via
+<a class="nav" href="https://utah.instructure.com/courses/244719/assignments">Canvas</a>.
+We should be able to run your code as is.</p>
+
+<p><b>Grading</b><br/>
+  You will be graded on how well you address the following:
+  <ol>
+    <li><b>10 pts:</b> When unzipped, project runs without errors or modifications on our part</li>
+<li><b>05 pts:</b> Data Reader images and discussion</li>
+<li><b>20 pts:</b> Color Map image and discussion</li>
+<li><b>25 pts:</b> Interpolation images and discussion</li>
+<li><b>30 pts:</b> Isocontour images and discussion</li>
+<li><b>10 pts:</b> Data Exploration images and discussion</li>
+<li><b>10 pts:</b>* Extra Credit 1</li>
+<li><b>20 pts:</b>* Extra Credit 2</li>
+  </ol>
+  *These are extra credit for everyone.<br/><br/>
+  
+  Please format your notebook so these are easy to find. If we can't find something in a reasonable
+  amount of time, you will not recieve credit for it.</p>
+  
+</div>
+
+	  </td>
+	  </tr>
+
+	  <tr>
+	     <a name="tfd"></a>
+        <td class="leftb">transfer function design</td>
+	<td class="data">
+	   <p>	  <b> Due on Tuesday, Dec 16th at midnight</b></p>
+
+	  
+<p>The need to visualize 3D volumes is a ubiquitous problem is
+	  medicine, engineering, and the computational
+	  sciences. These volumes are often complex and contain a wide
+	  range of scalar values that represent things like different
+	  tissue types, pressure fields, and temperatures. In this
+	  assignment you'll gain experience with one of the most
+	  challenging aspects of volume render: transfer function
+	  design.</p> 
+	  
+<p>
+	  <div onClick="openClose('a6')" style="cursor:hand;
+	    cursor:pointer"><i>more details...</i></div></p>
+<!-- 	    change "a" to "a6" -->
+<div id="a6" class="texter">
+
+<p> <b> Understanding Transfer Functions </b> <br />
+<div id="random_imgs">
+  <img src="images/transfer-functions/imagevis3d.png" width="200" height="75" />
+</div>
+To begin this assignment, you will explore a volume rendering tool:
+<a href="http://www.sci.utah.edu/software/imagevis3d.html" class="nav">ImageVis3D</a>.
+They also have
+<a href="http://www.sci.utah.edu/download/IV3DData.html" class="nav">several sample volumes</a>
+for you to download. Download one or more of these sample volumes, and load them
+into ImageVis3D. Then, in "Workspace", click on the "1D transfer function editor."
+Now, you will explore this editor to create your own custom transfer functions
+for your selected volume. Try and make a decent image; notice that this is
+not easy to do! Pay attention to the critical alpha channel, as this allows you to
+effectively hide different portions of the volume.
+<p>
+In your write-up, include the data
+set you chose to explore and several images of different stages of your exploration.
+Then, answer the following: </p>
+<ul>
+  <li> What did you like about the transfer function editor? </li>
+  <li> What is difficult about this editor / widget? </li>
+  <li> How would you improve the 1D transfer function editor? </li>
+</ul>
+
+<p> <b> Running the Volume Renderer </b> <br />
+<div id="random_imgs">
+  <img src="images/transfer-functions/vr.png" width="200" height="125" />
+</div>
+A challenging concept for volume rendering is transfer function design.
+As such, we are providing you with a volume renderer, courtesy of
+<a href="http://vis.uni-kl.de/people/garth/" class="nav">Dr. Christoph
+Garth</a> at the University of Kaiserslautern.
+You can find the
+<a href="protected/transfer-functions/code.zip" class="nav">code for the assignment here</a>.
+You will be modifying a single file (<em> Controls.java </em>),
+which will update the control panel window.</p>
+
+<p>
+First, test the volume renderer as it
+is. You will need to download the assignment code as well as the
+<a href="https://processing.org/download/?processing"
+class="nav">latest version of Processing</a> -- NOTE: this assignment
+requires you to be running Processing 2.1!
+If you have a slower computer, you may wish to go to the Engman lab as
+the volume renderer will rely on a fairly modern GPU; the computers in
+the Engman lab run the code well 
+(see the <a href="#data-exploration" class="nav">data exploration assignment</a>).
+Load this program up in Processing and run it. You should successfully get a screen
+as on the right. </p>
+
+<p> <b> Volume Visualization and Control Panel </b> <br />
+
+In the volume rendering window, you can move the dataset around using
+the left and right mouse keys + dragging. This style of panning and
+zooming interaction is nearly universal for volume visualization
+tools. </p> 
+
+After running the program, explore the current GUI for the control
+panel. The control panel widgets are 
+generated using the
+<a href="http://www.sojamo.de/libraries/controlP5/"
+class="nav">controlP5 library</a>, a Processing widget library that
+many use for buttons, sliders, etc.
+Explore this interface. You can choose different data sets and details about
+each will be printed in the Processing console. You can edit lighting settings, or disable them
+completely. Different settings for lighting often play a critical role in effective
+3D images. </p>
+
+
+
+<!-- <p> <b> A Simple Transfer Function </b> <br /> -->
+The last set of options in the control panel deals with transfer functions.
+The <em>center</em> and <em>density</em> variables tweak the parameters to
+a <em>step</em> function, which is the default transfer function mode. There
+is also a color picker below that, but please note that the alpha channel is
+not used. Choose one of the data sets provided and tweak the <em>step</em>
+transfer function and lighting settings, in order to produce an effective
+rendering of your volume. Attach a screenshot of both the control panel and
+the volume, and then answer the following: </p>
+<ul>
+  <li> What were you able to find from your volume data set? </li>
+  <li> What is useful about the step function? </li>
+  <li> What makes this particular function limited? </li>
+</ul>
+
+<p> <b> Code Structure </b> <br />
+The main Processing sketch (<em> TransferFunctions.pde </em>) has very little code
+because it calls two other files: one for rendering the volume
+(<em> VolumeRenderer.java </em>) and another for creating a control panel
+(<em> Controls.java </em>). For this assignment, you will only be required to edit
+the control panel, and you are welcome to treat the rest of the code as a black-box
+that just works. For those more experienced with Java, OpenGL, and GLSL, you are
+welcome to explore more, if you wish, but be sure you complete the assignment.
+If you have any difficulties, feel free to contact a TA. </p>
+
+<p> <b> Designing Your Own Transfer Function Widget </b> <br />
+The main purpose of this assignment is for you to design your own 1D transfer function
+widget. But first, you should take a step away from the code and go back to
+pencil and paper. Think about different ways to represent and encode a 1D
+transfer function. What controls will the user have access to? What user
+interactions will exist to make it a useful widget? You may also wish to
+consider the extra credit, at the end of the assignment. Try out multiple ideas,
+sketch two or three possible widgets that are significantly different. Scan
+each of your sketches into your digital notebook and explain how the
+interactivity works in each. </p>
+
+<p>Note that most transfer function widgets give the users some
+context about the distribution of scalar values in the volume,
+ie. they often show histograms of the scalar values. These histograms
+can help a user to select appropriate colors and alpha values by
+targetting the most (or sometimes least) prevalant values. You may
+want to consider "scenting" your transfer function widget with a histogram.</p>
+
+<p> Pick one to implement. You will be creating your widget so that it
+shows up on the empty, right-hand side of the Control Panel
+window. You will implement this widget using Processing code, and
+below we describe in detail where this code goes and what aspects of
+the existing data structures your widget must modify. The end result
+of your code will be to take the user input from your widget and use
+it to fill in the specific data structures in the code that specify
+the transfer function values (for both color and alpha).</p>
+
+<p> Your widget code will go in <em>Controls.java</em>. In the
+<b>implementation details</b> below we give details on how to use the code we have provided you. Include a screenshot
+of your interactive widget in your digital notebook and answer the following: </p>
+
+<ul>
+  <li> Which of your different sketches was implemented in the code?
+  How does it work? Why did you choose this idea? </li>
+</ul>
+
+<p> <b> Finding Good Transfer Functions </b> 
+<div id="random_imgs">
+  <img src="images/transfer-functions/tf.png" width="225" height="125" />
+</div>
+With your interactive widget, explore two of the included data sets,
+and create a good transfer function for each of them. See if you can
+find anything interesting or unique within your data sets. Include
+screenshots of your widget and the volume for each of the two data
+sets, and then answer the following: </p>
+<ul>
+  <li> Did you find anything interesting in the data sets? </li>
+  <li> What are the strengths and weaknesses of your design? </li>
+  <li> What would you change to make your widget more effective? </li>
+  <li> What are the pros and cons for volume rendering as a technique? What are the challenges? </li>
+</ul>
+
+<p> <b> Extra Credit </b> <br/>
+Design a 1D transfer function widget that uses a better perceptual color space for creating
+more effective transfer functions. You are welcome to use HSV or HSL, if you wish, but
+feel free to explore better color spaces, like Lab or HCL. What are the benefits of
+using a more perceptually uniform color space in creating transfer functions? What are
+the limitations or drawbacks of this approach? <p>
+
+<p> If you choose to do this extra credit, you do not need to design
+your widget using RGBA -- you can start with this more advanced color
+space and complete the assignment with it.</p>
+
+<div id="random_imgs">
+  <img src="images/transfer-functions/code.png" width="175" height="175" />
+</div>
+<p> <b> Implementation Details </b> <br />
+To aid with designing
+  your widget, we have provided certain data structures for 
+you to use. Again, be sure you are only editing in <em>Controls.java</em>, see
+right. Also, we have placed comments in that file, with the tag <em>CS6630</em>,
+to help you know where you should edit in-between. Unless you know what you are
+doing, we do not recommend editing code outside of there. </p>
+
+<p> We have provided two variables, <em>cWidth</em> and <em>cHeight</em>, that will
+set the height and width of the control panel. The default elements of the control
+panel are set later in the file, but you should not need to edit them. The
+GUI of the control panel already gives you a button to switch between two transfer
+function modes. The second mode (<em>custom transfer function</em>) is the one you
+will use for your own widget. </p>
+
+<p> We are also providing you with the volume data. First, an integer, <em>gridSize</em>,
+stores the number of data values on each edge of our 3D grid (which is
+uniform in all three dimensions). Also,
+<em>data[x][y][z]</em> is a 3D integer array that stores the scalar values of the volume,
+which have a range between 0 and 255. We also provide the min and max values for the
+current data set.</p>
+
+<p>To define the transfer functions used by the volume renderer, your
+widget will need let the user set the color and alpha for each scalar
+value in the volume, and then fill in four different integer arrays
+with those values.
+These four arrays (<em>red</em>, <em>green</em>, <em>blue</em>, and
+<em>alpha</em>) each have a size of 256, which represents the scalar
+values 0-255. At each array element you'll need to set the appropriate
+color channel value for that scalar value. For example, if I want the
+scalar value of 10 to be transparent red, I'd set red[9]=255,
+green[9]=blue[9]=0, and alpha[9]=150. The color channel array values
+should be between 0 and 255.
+Thus, to find the color for the scalar value of 255, the volume
+renderer will check the following: <em>red[255]</em>,
+<em>green[255]</em>, <em>blue[255]</em>, and <em>alpha[255]</em>. 
+Please note that we have white backgrounds, so if all the RGB values are 0, then you are
+using the color black. However, the alpha channel is set so that values of 0 are transparent
+and values of 255 are solid. By default, the RGBA arrays are all
+transparent white. </p>
+
+<p>If you are scenting your transfer function widget with a histogram
+of the scalar field values, then be aware that some of the data sets
+will be dominated by a single value -- this is quite common in
+volumes. These dominate values are most often uninteresting, such as
+the background or noise. You are free to "process" your histogram or
+display it in such a way that will minimize these dominate
+values. Please make sure to explain what you do in your notebook.</p>
+
+<p> Like in Processing, the code has a <em>setup()</em> method. Do not remove or change the
+ordering of the initial setup calls. But, you are welcome to add
+more to the setup if you wish. We also have a <em>draw()</em> method, where the bulk of
+your widget will likely be written. Please note that there is a special function,
+<em>updateTransferFunction()</em>, which will pass your RGBA arrays in their current form
+and update the volume renderer with that data, if you are set to the proper transfer
+function mode (<em>custom transfer function</em>). You do not need to call this every
+draw cycle, <b>but you must have a clear way to call this function in
+your widget in order to update the volume renderer with the user's
+transfer function.</b> </p>
+
+<p> Since you are writing in a Java file, there may be some quirks with using Processing
+commands. For example, to create a color, Java officially recognizes them as an <em>int</em>
+(not <em>color</em>!). Also, if you wish to write your own methods, you must be sure to
+specify them as public or private, like the <em>setup()</em> and <em>draw()</em> methods.
+You can do this for Processing methods that work like normal, like
+<em>mouseClicked()</em> or <em>mouseDragged()</em>. There may be more quirks, and,
+if you have trouble, feel free to contact the TAs. </p>
+
+
+
+<p> <b> Submission Details </b> <br/>
+As before, you must submit your PDF notebook and ZIP archive of your data and code via
+<a class="nav" href="https://utah.instructure.com/courses/244719/assignments">Canvas</a>.
+We should be able to run your code as is.</p>
+
+<p><b>Grading</b><br/>
+  You will be graded on how well you address the following:
+  <ol>
+    <li><b>10 pts:</b> When unzipped, project runs without errors or modifications on our part</li>
+<li><b>15 pts:</b> Exploration with ImageVis3D: images and discussion</li>
+<li><b>10 pts:</b> Exploration with initial tool: images and discussion</li>
+<li><b>15 pts:</b> Custom widget sketches and discussion</li>
+<li><b>40 pts:</b> Custom widget implementation
+  (functionality,usability, and creativity)</li>
+<li><b>10 pts:</b> Exploration with custom widget: images and discussion</li>
+<li><b>10 pts:</b>* Extra Credit 1</li>
+  </ol>
+  *This is extra credit for everyone.<br/><br/>
+  
+  Please format your notebook so these are easy to find. If we can't find something in a reasonable
+  amount of time, you will not recieve credit for it.</p>
+
+	    </div>
+	  </td>
+	  </tr>
+
+
+	  
+
+ </table>
+
+  </div>
+
+
+
+<a name="exams"></a>
+<div id="project_group">
+<h1>exams </h1>
+
+  
+ <table id="syllabus" > 
+
+<tr> <td class="leftb"> </td>
+<td class="data"><p>
+The exams will pull from both the lecture content and the required
+     readings. The first exam will cover the foundational material from weeks 1-6, and
+     the second exam will cover the technique material from weeks 7-15. You are
+     allowed one 8.5 x 11 piece of paper of notes for each exam. NO
+     COMPUTERS ARE ALLOWED DURING THE EXAMS. </p>
+
+  
+</td> 
+</tr> 
+ 
+   
+</table>
+</div>
+
+
+
+
+
+  <a name="lectures"></a>
+<div id="project_group">
+<h1>lectures </h1>
+
+<a name="L1"></a>
+<h2>L1. INTRODUCTION | TUES AUG. 26</h2>
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  
+- <a class="nav"
+        href="http://cacm.acm.org/magazines/2010/6/92482-a-tour-through-the-visualization-zoo/pdf">A
+        Tour through the Visualization Zoo</a>. Jeffrey Heer, Michael
+        Bostock, Vadim Ogievetsky. Communications of the ACM, 53(6),
+        pp. 59-67, Jun 2010. <br/>
+	  - <a class="nav"
+href="http://hci.stanford.edu/cs448b/papers/vanwijk_vov.pdf">The Value
+        of Visualization</a>.
+Jarke van Wijk. Proceedings of the IEEE Visualization Conference,
+        pp. 79-86, 2005.<br/>
+	 	</td>
+	      </tr>
+<tr>
+        <td class="leftbr">slides</t>
+	<td class="data">
+	  <a class="nav"
+    href="./lectures/L01-intro.pdf">L01-intro.pdf</a><br/>
+	</td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L2"></a>
+<h2>L2. DESIGN | THURS AUG. 28</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	 - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 1 What's Vis, and Why Do It?</a>
+	  Tamara Munzner.<br/>
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 6.10 Function First, Form Next</a> Tamara Munzner.<br/>
+	 - <a class="nav"
+href="http://soundcloud.com/roman-mars/99-invisible-04-99-details">99%
+	  Details.</a> Podcast from 99% Invisible,
+	  Sep 2010.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav"
+        href="http://vis.berkeley.edu/papers/designprinciples/">Design
+	Principles for Visual Communication.</a>  Maneesh Agrawala,
+	Wilmot Li, Floraine Berthouzoz. Communications of the ACM,
+	54(4), pp. 60-69, Apr
+	2011.   <br/>
+	 <!--  - <a class="nav" href="http://vis.berkeley.edu/papers/scented_widgets/2007-ScentedWidgets-InfoVis.pdf">Scented -->
+<!-- Widgets: Improving Navigation Cues with Embedded Visualizations</a>. Wesley -->
+<!-- Willett, Jeffrey Heer, and Maneesh Agrawala. IEEE TVCG (Proc InfoVis 2007) -->
+<!-- 13(6):1129-1136.<br/> -->
+<!-- 	   - <a class = "nav" -->
+<!-- 	  href="http://research.microsoft.com/en-us/um/redmond/groups/cue/publications/eurovis2010-interactivelegends.pdf">Understanding -->
+<!-- 	  Interactive Legends: a Comparative Evaluation with Standard -->
+<!-- 	  Widgets.</a> N. Riche, B. Lee, C. Plaisant. Computer Graphics Forum (Proc. of EuroVis '10), -->
+<!-- 	  29(3), pp. 1193-1202, 2010.<br/> -->
+	 - <a class="nav"
+        href="http://www.nature.com/nmeth/journal/v7/n9/full/nmeth0910-665.html">Design
+	  of data figures.</a> Bang Wong. Nature Methods 7, pp. 665, Sept
+	  2010.<br/>
+	  
+	  - <a class="nav"
+        href="http://www.nature.com/nmeth/journal/v8/n1/full/nmeth0111-5.html">Negative
+        space.</a> Bang Wong. Nature Methods 8, pp. 5, Jan
+	  2011.<br/>
+	  - <a class="nav"
+        href="http://www.sci.utah.edu/publications/anderson11/Anderson_eurovis2011.pdf">A
+	  User Study of Visualization Effectiveness Using EEG and
+	  Cognitive Load.</a> E. W. Anderson, K. C. Potter,
+	  L. E. Matzen2, J. F. Shepherd, G. A. Preston,
+	  C. T. Silva. Computer Graphics Forum, Volume 30, Issue 3, pages 791–800, June 2011.<br/>
+	  - <a class="nav"
+        href="http://dmrussell.net/CHI2010/docs/p2573.pdf">Useful Junk? The Effects of Visual Embellishment on Comprehension and Memorability of Charts.</a> Scott Bateman, Regan L. Mandryk, Carl Gutwin, Aaron Genest, David McDine, Christopher Brooks. Proceedings of CHI '10, pp. 2573-2582, Apr
+	  2010.<br/>
+	  - <a class="nav"
+        href="http://eagereyes.org/blog/2011/want-to-make-chart-memorable-add-junk">Want
+        to make a chart memorable? Add junk.</a> Critique of Bateman's
+        argument by Robert Kosara,
+        2011.<br/>
+ - <a class="nav"
+        href="http://cvcl.mit.edu/papers/Borkin_etal_MemorableVisualization_TVCG2013.pdf">What
+        Makes 
+        a Visualization Memorable?</a> Borkin MA, Vo AA, Bylinskii Z, Isola P, Sunkavalli S, Oliva A, Pfister H. IEEE Transactions on Visualization and Computer Graphics (Proceedings of InfoVis 2013). 2013.<br/>
+	   - <a class="nav"
+        href="http://www.diliaranasirova.com/assets/PSYC579/pdfs/09.1-VarakinEtAl.pdf">Unseen and Unaware: Implications of Recent Research
+on Failures of Visual Awareness for Human–Computer Interface
+        Design.</a> Alexander Varakin, Daniel T. Levin, Roger
+        Fidler. Human-Computer Interaction, 19(4), pp. 389-422, Nov
+	  2009.<br/>
+	  - <a class="nav"
+        href="http://www.amazon.com/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_1?s=books&ie=UTF8&qid=1326345592&sr=1-1">The
+        Visual 
+        Display of Quantitative Information.</a> Edward Tufte. 2001.<br/>
+
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L02-design.pdf">L02-design.pdf</a><br/></td>
+    </tr>
+    </table>
+    
+    <div class="hr"><hr /></div>
+     <a name="L3"></a>
+<h2>L3. PERCEPTION | TUES SEPT. 2</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/Ware-1and2.pdf">Visual
+	  Thinking
+	  for Design, Ch. 1 & 2, Visual Queries & What We Can Easily
+     See.</a>
+	  Colin Ware.<br/>
+	  
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav"
+href="http://www.csc.ncsu.edu/faculty/healey/PP/index.html">Perception
+	  in visualization.</a> Chris Healey.<br/>
+	  - <a class="nav"
+href="http://graphics.csail.mit.edu/~fredo/SIG02_ArtScience/siggraph_Gestalt_talk.pdf">Gestalt
+    and composition. In Course #13, SIGGRAPH 2002.</a> Fredo Durand.<br/>
+	   - <a class="nav"
+href="http://www.csc.ncsu.edu/faculty/healey/download/tochi.96.pdf">High-Speed
+	  Visual Estimation Using Preattentive Processing.</a>
+	  C. Healey, K. Booth, and J. Enns. ACM Transactions on
+	  Computer Human Interaction 3(2), pp. 107-135, 1996. <br/>
+	  - <a class="nav"
+href="http://vpfacgp.cs.utah.edu">Visual 
+	  Perception from a Computer Graphics Perspective.</a> 
+	  W. Thompson, R. Fleming, S. Creem-Regehr, J. Stefanucci. CRC
+	  Press, 2011. <br/>
+	  - <a class="nav"
+        href="http://www.nature.com/nmeth/journal/v7/n11/full/nmeth1110-863.html">Gestalt
+        principles (part 1).</a> Bang Wong. Nature Methods 7, pp. 863, Nov
+	  2010.<br/>
+	  - <a class="nav"
+        href="http://www.nature.com/nmeth/journal/v7/n12/full/nmeth1210-941.html">Gestalt
+        principles (part 2).</a> Bang Wong. Nature Methods 7, pp. 941, Dec
+	  2010.<br/>
+
+	   - <a class = "nav" href="http://www.dailymotion.com/video/xq1p3e_national-geographic-test-your-brain-episode-1-pay-attention_shortfilms">
+National Geographic: Test Your Brain Episode 1 - Pay Attention.</a>
+	  <br/>
+	  - <a class = "nav" href="http://www.dailymotion.com/video/xq1rfl_national-geographic-test-your-brain-episode-2-perception_shortfilms">
+National Geographic: Test Your Brain Episode 2 - Perception.</a> <br/>
+- <a class = "nav" href="http://www.dailymotion.com/video/x1jpdsw_national-geographic-test-your-brain-3of3-memory-pdtv-xvid-mp3-mvgroup-org_tech">
+National Geographic: Test Your Brain Episode 3 - Memory.</a> <br/>
+	  
+	  </td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L03-perception.pdf">L03-perception.pdf</a><br/></td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+<a name="L4"></a>
+<h2>L4. DATA TYPES & INTRO TO TABLEAU | TUES SEPT. 4</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  	- <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 2 What: Data Abstraction</a> Tamara Munzner.<br/>
+	
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+- <a class = "nav" href="http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf">Polaris: A System for Query, Analysis and Visualization of Multi-dimensional Relational Databases (extended paper).</a>
+Chris Stolte, Diane Tang and Pat Hanrahan. IEEE Transactions on
+    Visualization and Computer Graphics, Vol. 8, No. 1, January
+    2002.<br/>
+	  - <a class = "nav" href="http://ivi.sagepub.com/content/8/3/153.short">What Does the User Want to See? What do the Data Want to Be?</a>
+
+A. Johannes Pretorius and Jarke J. Van Wijk. Information Visualization
+	  8: 153, 2009.<br/>
+	  - <a class="nav"
+href="http://en.wikipedia.org/wiki/Level_of_measurement">Levels of
+	  Measurement.</a> Wikipedia.<br/>
+	  - <a class="nav"
+        href="http://www.jstor.org/pss/1671815">On the Theory of
+	  Scales of Measurement.</a> S. S. Stevens. Science, 
+	103(2684), pp. 677-680, June
+	1946.   <br/>
+	  </td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L04-data.pdf">L04-data.pdf</a><br/></td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L5"></a>
+<h2>L5. VISUAL ENCODINGS | TUES SEPT. 9</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 5 Marks and Channels,</a> Tamara Munzner.<br/>
+	  	- <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 6.3-6.6, and 6.9 Rules of Thumb,</a> Tamara
+	  Munzner.<br/>
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 10.4 Mapping Other Channels,</a> Tamara Munzner.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+ - <a class="nav"
+        href="http://www.jstor.org/pss/2288400">Graphical
+	  Perception: Theory, Experimentation and the Application to
+	  the Development of Graphical Models.</a>  William
+	  S. Cleveland, Robert McGill, J. Am. Stat. Assoc. 79:387,
+	  pp. 531-554, 1984.     <br/>
+	   - <a class="nav"
+        href="http://www2.parc.com/istl/projects/uir/publications/items/UIR-1986-02-Mackinlay-TOG-Automating.pdf">Automating the Design
+	  of Graphical Presentations of Relational Information.</a>
+	  Jock Mackinlay. ACM TOG 5(2), 1986.     <br/>
+	   - <a class="nav"
+        href="http://cs.utpa.edu/~rfowler/vis-papers/Card-Mackinlay_1997_Structure-of-IV-Design-Space.pdf">The
+	  Structure of the Information Visualization Design Space.</a> 
+	  Stuart Card and Jock Mackinlay. Proceedings of InfoVis,
+	  1997.     <br/>
+	  - <a class="nav"
+        href="http://vis.stanford.edu/papers/crowdsourcing-graphical-perception">Crowdsourcing
+	  Graphical Perception: Using Mechanical Turk to Assess
+	  Visualization Design.</a>  Jeffrey Heer, Michael Bostock. ACM
+	  Human Factors in Computing Systems (CHI), 203–212, 2010.
+	  <br/>
+	  - <a class = "nav"
+	  href="http://www.sims.berkeley.edu/courses/is247/f05/readings/Tversky_AnimationFacilitate_IJHCS02.pdf">Animation:
+	  Can It Facilitate?</a> Barbara Tversky, Julie Morrison,
+	  Mireille Betrancourt. International Journal of Human
+	  Computer Studies 57:4, pp 247-262, 2002.<br/>
+- <a class = "nav" href="http://vis.berkeley.edu/papers/animated_transitions/2007-AnimatedTransitions-InfoVis.pdf">
+Animated Transitions in Statistical Data Graphics.</a> Jeffrey Heer and George
+G. Robertson. IEEE TVCG (Proc. InfoVis 2007) 13(6): 1240-1247, 2007.<br/>
+	  
+	 
+	 
+- <a class="nav"
+        href="http://woodgears.ca/eyeball/index.html">The
+	  Eyeballing Game.</a> <br/>
+	  
+	  </td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L05-visual-encoding.pdf">L05-visual-encoding.pdf</a>
+	  <br/></td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L6"></a>
+<h2>L6. COLOR | THURS SEPT. 11</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 10.2-10.3 Color Theory and Colormaps,</a> Tamara Munzner.<br/>
+	  
+	  - <a class="nav"
+        href="./protected/Ware-4.pdf">Visual
+	  Thinking 
+	  for Design, Ch. 4 Color.</a>
+	  Colin Ware.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	   
+	  - <a class="nav"
+        href="http://www.jwave.vt.edu/~rkriz/Projects/create_color_table/color_07.pdf">Rainbow
+	  Color Map (Still) Considered Harmful.</a>  
+	  D. Borland and R. Taylor. Computer Graphics and
+	  Applications, 27(2), pp. 14-17, 2007.     <br/>
+	  - <a class="nav"
+        href="http://www.cs.ubc.ca/~tmm/courses/533-07/readings/pravda/truevis.htm">
+	   How Not to Lie with Visualization.</a>  Bernice E. Rogowitz and Lloyd Treinish. 
+	  Computers in Physics, 10, n.3, pp. 268-274, May/June
+    1996.<br/>
+	  - <a class="nav"
+        href="http://people.cs.uchicago.edu/~glk/pubs/pdf/Kindlmann-FaceBasedLuminanceMatching-VIS-2002.pdf">Face-based
+        Luminance Matching for Perceptual Colormap Generation.</a>   
+	  Gordon Kindlmann,
+Sarah Creem,
+Erik Reinhard.  In Proceedings of IEEE Visualization, pages 299–306, October 2002.   <br/>
+	  - <a class="nav"
+        href="http://www.personal.psu.edu/faculty/c/a/cab38/ColorSch/ASApaper.html">Color
+	  Use Guidelines for Mapping and Visualization.</a>   
+	   Cynthia A. Brewer. Proceedings of the Section on
+	  Statistical Graphics, American Statistical Association,
+	  Alexandria VA. pp. 55-60. 1999.  <br/>
+	  - <a class="nav"
+        href="http://graphics.stanford.edu/~sharonl/papers/semanticColors.pdf">
+	   Selecting Semantically-Resonant Colors for Data
+    Visualization.</a>  Sharon Lin, Julie Fortuna, Chinmay Kulkarni,
+    Maureen Stone, Jeffrey Heer.  
+	  Computer Graphics Forum (Proc. EuroVis), 2013.<br/>
+      - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6365630&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A6579618%29">
+       Perceptually Driven Visibility Optimization for Categorical Data Visualization.</a>  Sungkil Lee, Mike Sips, Hans-Peter Seidel. IEEE Transactions on Visualization and Computer Graphics, Vol. 19, No. 10, October 2013. <br />
+	   - <a class="nav"
+        href="http://dl.acm.org/citation.cfm?id=2208547">
+	   Color Naming Models for Color Selection, Image Editing and
+    Palette Design.</a>  Jeffrey Heer, Maureen Stone.     
+	  ACM Human Factors in Computing Systems (CHI), 2012.<br/>
+	  - <a class="nav"
+        href="http://mail.perceptualedge.com/articles/b-eye/choosing_colors.pdf">
+	  Choosing Colors for Data Visualization.</a>   
+	  M. Stone, 2006.     <br/>
+      - <a href="http://www.cs.ubc.ca/~tmm/courses/infovis/morereadings/stonecga.pdf" class="nav">
+          Representing Colors as Three Numbers.</a> M. Stone. IEEE CG&A, July/Aug 2005. <br />
+      
+	  - <a class="nav"
+        href="http://dl.acm.org/citation.cfm?id=806793">Using
+    Color Effectively in Computer Graphics.</a> Joan R. Truckenbrod.
+SIGGRAPH, 1981.<br/>
+	  - <a class="nav"
+        href="http://www.nature.com/nmeth/journal/v7/n8/full/nmeth0810-573.html">Color
+	  coding.</a> Bang Wong. Nature Methods 7, pp. 573, Aug
+	  2010.<br/>
+	  - <a class="nav"
+        href="http://www.nature.com/nmeth/journal/v8/n6/full/nmeth.1618.html">Color
+	  blindness.</a> Bang Wong. Nature Methods 8, pp. 441, May 
+	  2011.<br/>
+ - <a class="nav"
+        href="http://www.radiolab.org/story/211119-colors/">Colors.</a>  
+	  RadioLab, Season 10, Episode 13.     <br/>
+	  </td>
+    </tr>
+    
+    <tr>
+        <td class="leftbr">resources</td>
+    <td class="data">
+        - <a href="http://colorbrewer2.org/" class="nav">Color Brewer 2.0</a> <br />
+        - <a href="http://zzolo.org/colortools/" class="nav">Color Overview & Tools</a> <br />
+        - <a href="http://tristen.ca/hcl-picker/" class="nav">HCL Color Picker</a> <br />
+        - <a href="http://mudcu.be/sphere/#" class="nav">MudCube Color Scheme</a> (can simulate color deficiency) <br />
+        - <a href="http://colormine.org/color-converter"
+        class="nav">Color Converter</a> (across multiple color spaces)
+        <br />
+      - <a href="http://brucelindbloom.com" class="nav">More color
+        resources,</a> from Bruce Lindbloom. <br />
+    </td>
+    </tr>
+    
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	 <a class="nav"
+        href="./lectures/L06-color.pdf">L06-color.pdf</a>
+	  <br/></td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L7"></a>
+<h2>L7. INTRO TO PROCESSING | TUES SEPT. 16</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">required</td>
+    <td class="data">
+      - <a href="http://processing.org/tutorials/gettingstarted/" class="nav">Getting Started with Processing</a> <br />
+      - <a href="http://processing.org/tutorials/overview/" class="nav">Processing Overview</a> <br />
+      - <a href="http://processing.org/tutorials/drawing/" class="nav">Drawing in Processing</a> <br />
+    </td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+    <td class="data">
+        - <a
+        href="http://site.ebrary.com/lib/utah/docDetail.action?docID=10254740"
+        class="nav">Learning Processing, Ch. 1-3 (Lesson 1),</a>
+        Daniel Shiffman, Morgan Kaufmann, 2008.<br />
+       
+    </td>
+    </tr>
+    
+    <tr>
+        <td class="leftbr">resources</td>
+    <td class="data">
+        - <a href="https://processing.org/download/?processing" class="nav">Download Processing</a> <br />
+        - <a href="http://processing.org/tutorials/" class="nav">Processing Tutorials</a> <br />
+        - <a href="http://processing.org/examples/" class="nav">Processing Examples</a> <br />
+    </td>
+    </tr>
+    
+    <tr>
+        <td class="leftbr">slides</td>
+    <td class="data">
+      <a class="nav"
+href="./lectures/L07-processing.pdf">L07-processing.pdf</a>
+      <br/></td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    
+    <a name="L8.5"></a>
+    <h2>PROCESSING LAB DAY | THURS SEPT. 18</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">exercises</td>
+    <td class="data">
+      - <a
+    href="http://people.cs.clemson.edu/~levinej/courses/8810/labs/proc_lab.pdf"
+    class="nav">Processing exercises, c/o Dr. Josh Levine</a> <br />
+      - <a
+    href="http://people.cs.clemson.edu/~levinej/courses/8810/labs/proc_lab_data/data.txt"
+    class="nav">data.txt</a> for Processing exercise #2<br />
+      
+    </td>
+    </tr>
+
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+
+     <a name="L8"></a>
+<h2>L8. TASKS & INTERACTION | TUES SEPT. 23</h2> 
+   <table id="papers" >
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 3 Why: Task Abstraction,</a> Tamara Munzner.<br/>
+	  
+	 - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 11 Manipulate View,</a> Tamara
+        Munzner.<br/>
+	  
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 6.8 Responsiveness Is Required,</a> Tamara Munzner.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	    
+	   - <a class="nav"
+        href="http://www.cc.gatech.edu/~john.stasko/papers/infovis05.pdf">Low-Level
+	  Components of Analytic Activity in Information
+	  Visualization.</a>  
+	  Robert Amar, James Eagan, and John Stasko. Proceedings of
+    InfoVis, 2005.     <br/>
+	  - <a class="nav"
+        href="http://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/">A
+    Multi-Level Typology of Abstract Visualization Tasks.</a>   
+	 Matthew Brehmer and Tamara Munzner. 
+IEEE Transactions on Visualization and Computer Graphics (TVCG),
+    19(12), p. 2376--2385, 2013.     <br/>
+	  - <a class="nav"
+        href="http://www.informatik.uni-rostock.de/~hs162/pdf/taskds.pdf">A Design Space of Visualization Tasks.</a>   
+	 Hans-Jorg Schulz, Thomas Nocke, Magnus Heitzler, and Heidrun Schumann. 
+IEEE Transactions on Visualization and Computer Graphics (TVCG),
+    19(12), p. 2376--2385, 2013.     <br/>
+	  - <a class="nav"
+        href="http://www.cc.gatech.edu/~john.stasko/papers/infovis07-interaction.pdf">Toward
+        a Deeper Understanding of the Role of Interaction in
+        Information Visualization.</a> J.S. Yi, Y.A. Kang, J.T. Stasko
+        and J.A. Jacko, IEEE Transactions on Visualization and
+        Computer Graphics, Vol. 13, No. 6, Nov/Dec 2007,
+        pp. 1224-1231. <br/>
+	   - <a class="nav"
+        href="http://kops.ub.uni-konstanz.de/bitstream/handle/urn:nbn:de:bsz:352-181462/Geyer.pdf">Fluid
+        interaction for information visualization.</a> N. Elmqvist,
+        A. Vande Moere, H-C. Jetter, D. Cernea, H. Reiterer, and TJ
+        Jankun-Kelly, Information Visualization, Vol. 10, No. 4,
+        Oct. 2011, pp. 327-340.  <br/>
+	  - <a class = "nav" href="http://delivery.acm.org/10.1145/2150000/2146416/p30-heer.pdf?ip=155.98.19.149&id=2146416&acc=OPEN&key=B63ACEF81C6334F5%2E43A2660A68B2F3B6%2E4D4702B0C3E38B35%2E6D218144511F3437&CFID=561019555&CFTOKEN=15634128&__acm__=1411164894_553a913f32e854ca955868a9e5b4b6f2">
+Interactive Dynamics for Visual Analysis.</a> Heer & Shneiderman. Queue 10, 2, Pages 30 (February 2012).
+<br/>
+	  - <a class="nav"
+href="http://www.cs.umd.edu/hcil/pad++/papers/uist-94-pad/uist-94-pad.pdf">Pad++:
+A Zooming Graphical Interface for Exploring Alternate Interface
+Physics</a> Ben Bederson, and James D Hollan, Proc UIST 94. <br/>
+	 - <a class="nav"
+href="http://www.cs.umd.edu/hcil/pad++/papers/chi-95-spacescale/chi-95-spacescale.pdf">Space-Scale
+Diagrams: Understanding Multiscale Interfaces</a> George Furnas and
+Ben Bederson, Proc SIGCHI '95.<br/>
+	  - <a class = "nav" href="http://www.win.tue.nl/~vanwijk/zoompan.pdf">
+Smooth and efficient zooming and panning.</a> Jarke J. van Wijk and Wim A.A. Nuij. INFOVIS'03 Proceedings of the Ninth annual IEEE conference on Information visualization.<br/>
+	  - <a class = "nav" href="http://vis.berkeley.edu/papers/animated_transitions/2007-AnimatedTransitions-InfoVis.pdf">
+Animated Transitions in Statistical Data Graphics.</a> Jeffrey Heer and George
+G. Robertson. IEEE TVCG (Proc. InfoVis 2007) 13(6): 1240-1247,
+        2007.<br/>
+
+	  
+	  </td>
+    </tr>
+    
+    
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	 <a class="nav"
+        href="./lectures/L08-tasks-interaction.pdf">L08-tasks-interaction.pdf</a>
+	  <br/></td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L9"></a>
+<h2>L9. VIEWS | THURS SEPT. 25</h2> 
+   <table id="papers" >
+ 
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	   - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 12 Facet Into Multiple Views,</a> Tamara
+        Munzner.<br/>
+	 - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 6.7 Overview First, Zoom and Filter, Details on Demand,</a> Tamara Munzner.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	   - <a class = "nav" href="http://ccom.unh.edu/vislab/PDFs/PlumleeWareZoom.pdf">Cognitive costs of
+zooming versus using multiple windows.</a>
+Matthew D. Plumlee and Colin Ware. ACM Trans. Applied
+Perception (TAP) 13(2):1-31, 2006.<br/>
+	   
+	  - <a class = "nav" href="http://dl.acm.org/citation.cfm?id=345271">Guidelines for Using Multiple Views in Information Visualization.</a>
+M. Wang, A. Woodruff, A. Kuchinsky. Proceedings of the working
+	  conference on Advanced visual interfaces (AVI '00),
+	2000.<br/>
+	  - <a class = "nav" href="http://www.cs.kent.ac.uk/pubs/2007/2559/content.pdf">State of the Art: Coordinated & Multiple Views in Exploratory Visualization.</a>
+J. Roberts. Proc. Conference on Coordinated & Multiple Views in Exploratory Visualization (CMV) 2007.<br/>
+	  
+- <a class="nav"
+        href="http://ivlab.cs.umn.edu/pubs/Keefe-2009-MultiViewVis.php">Interactive
+        Coordinated Multiple-View Visualization of Biomechanical Motion
+Data.</a> Daniel F. Keefe, Marcus Ewert, William Ribarsky, Remco
+        Chang. IEEE Trans. Visualization and Computer Graphics
+        (Proc. Vis 2009), 15(6):1383-1390, 2009.<br/>
+	  - <a class="nav"
+        href="http://hci.stanford.edu/courses/cs448b/papers/shneiderman96eyes.pdf">The
+	  Eyes Have It: A Task by Data Type Taxonomy for Information
+	  Visualizations.</a> 
+	  Ben Shneiderman. Proceedings of the IEEE Conference on
+	  Visual Languages, 1996.     <br/>
+- <a class = "nav" href="http://hci.stanford.edu/courses/cs448b/papers/becker-trellis-jcgs.pdf">The visual design and control of the trellis display.</a>
+R. Becker, W. Cleveland, M. Shyu. Journal of Computational and
+	  Graphical Statistics, 5(2),
+	1996.<br/>
+	  - <a class = "nav" href="http://gicentre.org/hierarchical_layouts/">Configuring Hierarchical Layouts to Address Research Questions.</a>
+A. Slingsby, J. Dykes, J. Wood. IEEE Transactions on Visualization and
+	  Computer Graphics 15 (6), Nov-Dec 2009.<br/>
+	  - <a class = "nav"
+	  href="http://vita.had.co.nz/papers/prodplots.html">Product Plots.</a>
+H. Wickham, H. Hofmann. IEEE Transactions on Visualization and
+        Computer Graphics (Proc. InfoVis '11), 2011.<br/>
+- <a class = "nav"
+	  href="http://intranet.oerc.ox.ac.uk/personal-pages/emaguire/Taxonomy-based%20Glyph%20Design.pdf">Taxonomy-Based Glyph Design — with a Case Study on Visualizing Workflows of Biological Experiments.</a>
+Eamonn Maguire, Philippe Rocca-Serra, Susanna-Assunta Sansone, Jim Davies, and Min Chen. IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. 18, NO. 12, DECEMBER 2012.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L09-views.pdf">L09-views.pdf</a> 
+	  <br/>
+	</td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L10"></a>
+<h2>L10. FOCUS+CONTEXT | TUES SEPT. 30</h2> 
+   <table id="papers" >
+ 
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	 - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 14 Embed: Focus + Context,</a> Tamara
+        Munzner.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	   
+	   - <a class="nav" href="http://research.microsoft.com/pubs/75818/cockburn-ComputingSurveys09.pdf">A
+review of overview+detail, zooming, and focus+context interfaces</a>. Andy
+Cockburn, Amy Karlson, and Benjamin B. Bederson. ACM Computing Surveys
+        41(1), 2008.<br/>
+	  - <a class="nav"
+href="http://dl.acm.org/citation.cfm?id=1124921">A
+	  fisheye follow-up: further reflections on focus +
+	  context</a> George Furnas, CHI '06, Proceedings of the SIGCHI conference on Human Factors in computing systems.<br/>
+
+	  - <a class="nav" href="ftp://ftp.cs.umd.edu/pub/hcil/Reports-Abstracts-Bibliography/2002-05html/2002-05.pdf">SpaceTree: Supporting Exploration in Large Node Link Tree, Design Evolution and Empirical Evaluation</a>
+Catherine Plaisant, Jesse Grosjean, and Ben B. Bederson. Proc. InfoVis
+	  2002. <br/>
+	 
+- <a class="nav"
+href="http://dl.acm.org/citation.cfm?id=1556262.1556300">Degree-of-interest
+	  trees: a component of an attention-reactive user
+	  interface.</a> S. Card and D. Nation, Proceedings of the
+	  Working Conference on Advanced Visual Interfaces (AVI 02),
+        2002. <br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L10-focus+context.pdf">L10-focus+context.pdf</a>
+	  <br/>
+	</td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+                        <a name="L11"></a>
+<h2>L11. FILTERING AND AGGREGATION | THURS OCT. 2</h2> 
+   <table id="papers" >
+ 
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 13 Reduce Items and Attributes,</a> Tamara
+        Munzner.<br/>
+	  
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav"
+    href="http://www.cs.ubc.ca/labs/imager/tr/2013/ScatterplotEval/">Empirical
+    Guidance on Scatterplot and  
+Dimension Reduction Technique Choices</a>. Michael Sedlmair, Tamara
+    Munzner, and Melanie Tory. 
+IEEE Trans. Visualization and Computer Graphics (Proc. InfoVis 2013)
+    19(12): 2634-2643, 2013.<br/> 
+	   - <a class="nav" href="http://www.cs.ubc.ca/labs/imager/tr/2008/glimmer/">Glimmer:
+Multilevel MDS on the GPU</a>. Stephen Ingram, Tamara Munzner and Marc Olano.
+IEEE TVCG, 15(2):249-261, Mar/Apr 2009.<br/>
+	  - <a class="nav"
+href="http://www.cs.utah.edu/~sgerber/research/hdviz.pdf">Visual
+    Exploration of High Dimensional Scalar Functions.</a> Samuel
+    Gerber, Peer-Timo Bremer, Valerio Pascucci, Ross Whitaker, IEEE
+    Transactions on Visualization and Computer Graphics, Proceedings
+    of VIS 2010. <br/>
+	  - <a class="nav" href="http://www.cs.ubc.ca/labs/imager/tr/2010/DimStiller/">DimStiller: Workflows for dimensional analysis and reduction</a>.
+	    Stephen Ingram, Tamara Munzner, Veronika Irvine, Melanie Tory, Steven Bergner, and Torsten Moeller.
+	    IEEE Conference on Visual Analytics Software and
+    Technologies (VAST) 2010, p 3-10. <br/>
+	  - <a class="nav" href="http://webstaff.itn.liu.se/~jimjo/papers/infovis2009/johansso.pdf">Interactive Dimensionality Reduction Through User-defined Combinations of Quality Metrics</a>.
+	Sara Johansson and Jimmy Johansson. IEEE Trans. Visualization and Computer Graphics (Proc. InfoVis 09)
+15(6):993-1000, 2009.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav" href="./lectures/L11-filtering-aggregation.pdf">L11-filtering-aggregation.pdf</a> <br/>
+    </td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+      <a name="L12"></a>
+<h2>L12. TABLES | THURS OCT. 9</h2> 
+   <table id="papers" >
+ 
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	 - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 7 Tables,</a> Tamara
+        Munzner.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	   - <a class = "nav" href="http://vis.stanford.edu/files/2011-ArclengthBanking-InfoVis.pdf">Arc Length-based Aspect Ratio Selection.</a>
+Justin Talbot, John Gerth, and Pat Hanrahan. IEEE TVCG (Proceedings of
+	  InfoVis), 2011.<br/>
+      - <a class = "nav" href="http://www.justintalbot.com/wp-content/uploads/2013/02/banking2_corrected1.pdf">An Empirical Model of Slope Ratio Comparisons.</a>
+Justin Talbot, John Gerth, and Pat Hanrahan. IEEE TVCG (Proceedings of
+	  InfoVis), 2012.<br/>
+- <a class = "nav" href="http://vis.stanford.edu/files/2010-TickLabels-InfoVis.pdf">An Extension of Wilkinson’s Algorithm for Positioning Tick Labels on Axes.</a>
+Justin Talbot, Sharon Lin, and Pat Hanrahan. IEEE TVCG 16(6),
+	  2010.<br/>
+	  - <a class = "nav" href="http://vis.berkeley.edu/papers/banking/2006-Banking-InfoVis.pdf">Multi-Scale Banking to 45 Degrees</a>
+Jeffrey Heer, Maneesh Agrawala. Proc. InfoVis 2006, published as IEEE
+	Transactions on Visualization and Computer Graphics (TVCG),
+	12(5), Sep/Oct 2006, pages 701-708.<br/>
+	  - <a class="nav" href="http://sgratzl.github.io/paper-2013-lineup/">LineUp: Visual Analysis of Multi-Attribute Rankings</a>.
+	Samuel Gratzl, Alexander Lex, Nils Gehlenborg, Hanspeter Pfister and Marc Streit. IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), 2013.<br/>
+	   - <a class="nav" href="http://bib.dbvis.de/uploadedFiles/202.pdf">VisDB: A System for Visualizing Large Databases</a>.
+	Daniel A. Keim, Hans-Peter Kriegel. Proceedings of ACM SIGMOD
+        1995.<br/>
+	  - <a class="nav" href="http://www.cs.umd.edu/~ben/papers/Seo2002Interactively.pdf">Interactively Exploring Hierarchical Clustering Results</a>.
+	Jinwook Seo and
+Ben Shneiderman.  IEEE Computer, Volume 35, Number 7, pp. 80-86, July 2002.<br/>
+	  - <a class="nav" href="http://www.research.ibm.com/visual/papers/leebyron_stackedgraphs_byron_wattenberg.pdf">Stacked Graphs – Geometry & Aesthetics</a>.
+	Byron & Wattenberg. Proceedings of InfoVis 2008.<br/>
+	  
+ - <a class="nav" href="http://ieeexplore.ieee.org/iel5/9496/30135/01382901.pdf?tp=&isnumber=&arnumber=1382901">Metric-Based
+	  Network Exploration and Multiscale Scatterplot</a> Yves
+	  Chiricota, Fabien Jourdan, Guy Melancon. Proc. InfoVis 04, pages
+	  135-142.<br/>
+	  - <a class="nav"
+	  href="http://davis.wpi.edu/~xmdv/docs/vis99_HPC.pdf">Hierarchical
+	  Parallel Coordinates for Exploration of Large Datasets</a>
+	  Ying-Huey Fua, Matthew O. Ward, and Elke A. Rundensteiner,
+	  IEEE Visualization '99.<br/>
+	  - <a class="nav" href="http://vis.berkeley.edu/papers/horizon/2009-TimeSeries-CHI.pdf">Sizing the Horizon: The Effects of Chart Size and Layering on the Graphical Perception of Time Series Visualizations.</a>
+	Jeffrey Heer, Nicholas Kong, and Maneesh Agrawala. ACM Human
+	  Factors in Computing Systems (CHI), 2009. pp. 1303 -
+	  1312.<br/>
+	 
+	  - <a class="nav" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.66.6504&rep=rep1&type=pdf">Parallel sets: visual analysis of categorical data</a> Fabien
+	Bendix, Robert Kosara, and Helwig Hauser. Proc. InfoVis 2005, p 133-140.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L12-tabular.pdf">L12-tabular.pdf</a><br/>
+	</td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+       <a name="L13"></a>
+<h2>L13. TREES AND GRAPHS | TUES OCT. 21</h2> 
+   <table id="papers" >
+ 
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	 - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 9 Arrange Networks and Trees,</a> Tamara
+        Munzner.<br/>
+	   - <a class="nav" href="http://treevis.net">A Visual Bibliography of Tree
+	Visualization</a>, Hans-Jorg Schulz, InfoVis 2010 Best
+	  Poster.<br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	   - <a class="nav" href="http://servus.itn.liu.se/courses/TNM048/ref/graph.htm">
+Graph Visualisation in Information Visualisation: a Survey</a> Ivan
+Herman, Guy Melancon, M. Scott Marshall. IEEE Transactions on
+Visualization and Computer Graphics, 6(1), pp. 24-44, 2000.<br/>
+	   - <a class="nav" href="http://ivi.sagepub.com/content/9/4/235.short">
+A survey of multiple tree visualisation.</a> Martin Graham and Jessie
+        Kennedy. Information Visualization, vol. 9 no. 4, 235-252, 2010.<br/>
+	  - <a class="nav"
+	  href="http://www.research.ibm.com/visual/papers/pivotgraph.pdf">Visual
+	  Exploration of Multivariate Graphs</a>. Martin Wattenberg,
+	  Proc. CHI 2006. <br/>
+	  - <a class="nav"
+				  href="http://www.cydney.org/Publications_files/Nielsen_infovis_2009.pdf">ABySS-Explorer:
+				  Visualizing genome sequence assemblies.</a> Cydney B. Nielsen, Shaun
+				  D. Jackman, Inanc Birol, Steven J.M. Jones. IEEE Transactions on
+				  Visualization and Computer Graphics (Proc InfoVis 2009) 15(6):881-8,
+				  2009.<br/>
+	  - <a class="nav"
+	  href="http://dl.acm.org/citation.cfm?id=1168168">Task taxonomy for graph visualization</a>.B. Lee, C. Plaisant, C. Sims Parr, J.-D. Fekete, N. Henry,
+	  Proc. of BELIV '06, April '06, pp. 1-5. <br/>
+	  
+	  - <a class="nav" href="http://www.ee.technion.ac.il/~ayellet/Ps/OnlineGD.pdf">Online Dynamic Graph Drawing</a>
+Yaniv Frishman and Ayellet Tal.
+Proc EuroVis 2007, 75-82.<br/>
+	 
+	
+	  - <a class="nav" href="http://www.win.tue.nl/~vanwijk/ctm.pdf">Cushion Treemaps</a> 
+Jack J. van Wijk and Huub van de Wetering, Proc InfoVis 1999, pp
+	  73-78.<br/>
+	   
+	  - <a class="nav"
+	  href="http://www.smartmoney.com/map-of-the-market/">Map of
+	  the market.</a> <br/>
+	  - <a class="nav"
+	  href="http://www.randelshofer.ch/treeviz/index.html">Visualization
+	  of large tree structures.</a> <br/>
+	  - <a class="nav" href="http://www.planarity.net/">Planarity
+	  game.</a> <br/>
+	  - <a class="nav"
+	  href="http://mbostock.github.com/protovis/ex/force.html">Force-directed
+	  layout in Protovis.</a> <br/>
+	</td>
+    </tr>
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L13-trees-graphs.pdf">L13-trees-graphs.pdf</a><br/>
+	</td>
+    </tr>
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L14"></a>
+<h2>L14. TEXT AND SETS | THURS OCT. 23</h2> 
+  <table id="papers" >
+    
+    <tr>
+      <td class="leftbr">required</td>
+      <td class="data">
+	- <a class="nav"
+      href="http://searchuserinterfaces.com/book/sui_ch11_text_analysis_visualization.html">Search
+      User Interfaces - Chapter 11, Information Visualization for Text
+      Analysis.</a>  Marti A. Hearst, 2009.<br/> 
+	- <a href="http://kar.kent.ac.uk/39007/"
+      class="nav">Visualizing Sets and Set-typed Data:
+      State-of-the-Art and Future Challenges</a>. Alsallakh, Bilal and Micallef, Luana and Aigner, Wolfgang and
+      Hauser, Helwig and Miksch, Silvia and Rodgers, Peter,
+      Eurographics Conference on Visualization (EuroVis), June
+      2014. <br /> 
+        
+      </td>
+    
+    <tr>
+      <td class="leftbr">recommended</td>
+      <td class="data">
+
+        - <a
+      href="http://www.ifs.tuwien.ac.at/~silvia/wien/vu-infovis/references/havre-ieeeinfovis00.pdf"
+      class="nav">ThemeRiver: Visualizing Theme Changes over
+      Time</a>. Susan Havre, Beth Hetzler, Lucy Nowell. IEEE
+      Information Visualization Symposium, 2000. <br /> 
+
+
+        - <a
+	href="http://128.131.166.46/courses/InfoVis/HallOfFame/2011/Gruppe05/Homepage/Paper/wordtree-paper-wattenberg.pdf"
+	class="nav">The Word Tree, an Interactive Visual
+	Concordance</a>. Martin Wattenberg, Fernanda Viegas. IEEE
+	Trans. Visualization and Computer Graphics, 2008. <br /> 
+        - <a
+	href="http://igva2012.wikispaces.asu.edu/file/view/iv08-jigsaw.pdf"
+	class="nav">Jigsaw: Supporting Investigative Analysis through
+	Interactive Visualization</a>. John Stasko, Carsten Gorg,
+	Zhicheng Liu. Information Visualization, 2008. <br /> 
+
+        - <a
+	href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.7051&rep=rep1&type=pdf"
+	class="nav">DocuBurst: Visualizing Document Content using
+	Language Structure</a>. Christopher Collins, Sheelagh
+	Carpendale, Gerald Penn. IEEE Eurographics VGTC Symposium,
+	2009. <br /> 
+        - <a
+	href="http://ftp.cg.tuwien.ac.at/courses/InfoVis/papers/InfoVis2009%20Mapping%20Text%20with%20Phrase%20Nets%20[Frank%20van%20Ham].pdf"
+	class="nav">Mapping Text with Phrase Nets</a>. Frank van Ham,
+	Martin Wattenberg, Fernanda Viegas. IEEE Trans. Visualization
+	and Computer Graphics, 2009. <br />
+	- <a class="nav"
+href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1173155">Arc
+Diagrams: Visualizing Structure in Strings.</a> Martin Wattenberg. 
+IEEE Information Visualization Symposium, 2002. </br>
+	- <a class="nav"
+href="http://onlinelibrary.wiley.com/doi/10.1111/cgf.12125/full">Rule-based
+Visual Mappings - with a Case Study on Poetry Visualization.</a> Alfie
+Abdul-Rahman, Julie Lein, Katharine Coles, Emmon Maguire, Miriah Meyer,
+Martine Wynne, Chris Johnson, Anne Trefethen, and Min Chen. Computer
+Graphics Forum (Proceedings of EuroVis 2013), 32(3), 2013.</br>
+- <a class="nav"
+href="http://static.mrfeinberg.com/bv_ch03.pdf">Wordle.</a> Jonathan
+	Feinberg. Beautiful Visualization, O'Reilly Media, 2010.</br>
+
+
+        - <a
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5290706&tag=1"
+        class="nav">Bubble Sets: Revealing Set Relations with
+        Isocontours over Existing Visualizations</a>. C. Collins,
+        G. Penn, S. Carpendale. IEEE Trans. Visualization and
+        Computer Graphics, 2009. <br /> 
+        - <a
+        href="http://research.microsoft.com/en-us/um/people/nath/docs/eulerdiagrams_infovis2010.pdf"
+        class="nav">Untangling Euler Diagrams</a>. Nathalie Henry
+        Riche, Tim Dwyer. IEEE Trans. Visualization and Computer
+        Graphics, 2010. <br /> 
+        - <a
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6064991&tag=1"
+        class="nav">Design Study of LineSets, a Novel Set
+        Visualization Technique</a>. B. Alper, N.H. Riche, G. Ramos,
+        M. Czerwinski. IEEE Trans. Visualization and Computer
+        Graphics, 2011. <br /> 
+
+        - <a
+          href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6509874"
+          class="nav">KelpFusion: A Hybrid Set Visualization
+          Technique</a>. W. Meulemans, N.H. Riche, B. Speckmann,
+          B. Alper, T. Dwyer. IEEE Trans. Visualization and Computer
+          Graphics, 2013. <br /> 
+        
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="leftbr">slides</td>
+      <td class="data">
+        <a href="./lectures/L14-text-sets.pdf" class="nav">L14-text-sets.pdf</a> <br />
+      </td>
+    </tr>
+    
+  </table>
+  <div class="hr"><hr /></div>
+
+  <a name="L15"></a>
+<h2>L15. MAPS | TUES OCT. 28</h2>
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 8.1-8.3 Arrange Spatial Data,</a> Tamara
+        Munzner.<br/>
+	 
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav"
+href="http://www.geovista.psu.edu/publications/MacEachren/MacEachren_Evolution_1979.pdf">The
+Evolution of Thematic Cartography/A Research Methodology and Historical
+Review.</a> Alan M. MacEachren. The Canadian Cartographer 16:1 (1979),
+17-33.</br>
+	  - <a class="nav"
+        href="http://www.win.tue.nl/~vanwijk/myriahedral/CAJ103.pdf">Unfolding
+        the Earth: Myriahedral Projections</a>.
+Jarke J. van Wijk,
+	 The Cartographic Journal, Vol. 45, No. 1, pp.32-42, February
+	  2008.<br/>
+	 
+	  
+	  - <a class="nav" href="http://www.pnas.org/content/101/20/7499.full.pdf">Diffusion-based method for producing density-equalizing maps</a>.
+Michael T. Gastner and M. E. J. Newman,
+	  PNAS 101(20), 2004.<br/>
+	  - <a class="nav" href="http://www.win.tue.nl/~speckman/papers/NecklaceMapsFinal.pdf">Necklace Maps</a>.
+Bettina Speckmann and Kevin Verbeek,
+	  Proceedings of InfoVis, 2010.<br/>
+	 
+- <a class="nav" href="http://www.csiss.org/map-projections/index.html">Map Projections</a></br>
+   - <a class="nav" href="http://www.ncgia.ucsb.edu/projects/Cartogram_Central/index.html">Cartogram Central</a></br>
+    - <a class="nav" href="http://www.win.tue.nl/~vanwijk/myriahedral/">Myriahedral Projections</a></br>
+	  
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L15-maps.pdf">L15-maps.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+     <a name="L16"></a>
+<h2>L16. GRIDS | THURS OCT. 30</h2>
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="http://www.crcnetbase.com/isbn/9781439865040">Mathematical
+Principles for Scientific Computing and Visualization, Chapter 13 Facets.</a> Gerald Farin
+and Dianne Hansford.  A K Peters/CRC Press, 2008.<br/>
+	  
+	 
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav"
+        href="http://www.idav.ucdavis.edu/publications/print_pub?pub_id=51"> A Survey of Grid Generation Methodologies and Scientific Visualization Efforts</a>. 
+Bernd Hamann, Robert J. Moorhead In G. M. Nielson, Hans Hagen, H. Muller
+, eds.  Scientific Visualization: Overviews, Methodologies, and
+Techniques IEEE Computer Society Press, Los Alamitos, 1997.<br/>
+	  - <a class="nav"
+href="http://www.cs.berkeley.edu/~jrs/papers/umg.pdf">Sections 10.1-10.3: Unstructured Mesh Generation.</a>  Jonathan Richard Shewchuk.  In Combinatorial Scientific Computing (Uwe Naumann and Olaf Schenk, editors), Chapter 10, pages 257-297, CRC Press, January 2012.</br>
+	  - <a class="nav"
+       href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5613496">Fast, Memory-Efficient Cell Location in Unstructured Grids for Visualization.</a> Christoph Garth, Kenneth I. Joy:  IEEE Trans. Vis. Comput. Graph. 16(6): 1541-1550, 2010.<br/>
+	 
+	  
+	  - <a class="nav" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=4015405">Streaming Simplification of Tetrahedral Meshes.</a> Huy T. Vo, Steven P. Callahan, Peter Lindstrom, Valerio Pascucci, Cl&aacute;udio T. Silva. IEEE Trans. Vis. Comput. Graph. 13(1): 145-155, 2007.<br/>
+	  
+	  
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L16-grids.pdf">L16-grids.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L17"></a>
+<h2>L17. ISOSURFACES | TUES NOV. 4</h2>
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 8.4.1 Arrange Spatial Data,</a> Tamara
+        Munzner.<br/>
+	  - <a class="nav" href="http://dl.acm.org/citation.cfm?id=37422">Marching Cubes: A
+High Resolution 3D Surface Construction Algorithm.</a> William E.
+Lorensen and Harvey E. Cline, Computer Graphics (Proceedings of SIGGRAPH
+87), 21 (4), pp. 163-169 (July 1987, Anaheim, California). <br/>
+	 
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	   - <a class="nav" href="http://www.cpsc.ucalgary.ca/~blob/papers/softobjects.pdf">
+Data structures for soft objects.</a> Geoff Wyvill, Craig McPheeters,
+Brian Wyvill. The Visual Computer 2(4): 227-234 (1986).<br/>
+	  - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=175782"> The Asymptotic
+        Decider: Resolving the Ambiguity in Marching Cubes</a>,
+        Gregory M. Nielson, Bernd Hamann. IEEE Visualization 1991: 83-93.<br/>
+	 
+ - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5928335">Topology
+        Verification for Isosurface Extraction</a>, 
+        Tiago Etiene, Luis Gustavo Nonato, Carlos Eduardo Scheidegger,
+        Julien Tierny, Thomas J. Peters, Valerio Pascucci, Robert
+        M. Kirby, Cláudio T. Silva. IEEE
+        Trans. Vis. Comput. Graph. 18(6): 952-965 (2012).<br/>
+	  - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=4376205">
+        Topology, Accuracy, and Quality of Isosurface Meshes Using
+        Dynamic Particles</a>,  
+         Miriah D. Meyer, Robert M. Kirby, Ross T. Whitaker. IEEE
+        Trans. Vis. Comput. Graph. 13(6): 1704-1711 (2007).<br/>  
+	  - <a class="nav"
+href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5613459">On
+the Fractal Dimension of Isosurfaces.</a> Marc Khoury, Rephael Wenger.
+IEEE Trans. Vis. Comput. Graph. 16(6): 1198-1205 (2010).<br/>
+
+- <a class="nav"
+href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=489388">
+A Near Optimal Isosurface Extraction Algorithm Using the Span Space.</a>
+Yarden Livnat, Han-Wei Shen, Christopher R. Johnson. IEEE Trans. Vis.
+Comput. Graph. 2(1): 73-84 (1996).<br/>
+	 - <a class="nav"href="http://www.crcnetbase.com/doi/book/10.1201/b15025">Isosurfaces:
+Geometry, Topology, and Algorithms.</a> Rephael Wenger. A K Peters/CRC
+	  Press 2013.<br/> 
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L17-isosurfaces.pdf">L17-isosurfaces.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+<a name="L18"></a>
+<h2>L18. 3D GRAPHICS | THURS NOV. 6</h2> 
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+	 href="http://www.crcnetbase.com/isbn/9781439865040">Mathematical
+Principles for Scientific Computing and Visualization, Chapter 16 Background.</a> Gerald Farin
+and Dianne Hansford.  A K Peters/CRC Press, 2008.<br/>
+	 
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav" href="http://dl.acm.org/citation.cfm?id=801255">Light reflection
+functions for simulation of clouds and dusty surfaces.</a> James F.
+Blinn.  SIGGRAPH 16(3): 21-29, 1982.<br/>
+
+- <a class="nav" href="http://dl.acm.org/citation.cfm?doid=964965.808606">Compositing digital images.</a> Thomas Porter and Tom Duff. 
+SIGGRAPH 18(3): 253-259, 1984.<br/>
+
+- <a class="nav" href="http://dl.acm.org/citation.cfm?id=15902">The rendering
+equation.</a> James T. Kajiya. SIGGRAPH 20(4): 143-150, 1986.<br/>
+
+- <a class="nav" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1532854">Example-based Volume Illustrations.</a>
+Aidong Lu, David S. Ebert.
+Proceedings of IEEE Visualization, pp. 655-662, 2005.<br/>
+
+- <a class="nav" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=885694">
+Volume Illustration: Nonphotorealistic Rendering of Volume Models.</a>
+Penny Rheingans, David S. Ebert.
+IEEE Trans. Vis. Comput. Graph. 7(3): 253-264 (2001).<br/>
+
+
+	  - <a class="nav"
+        href="http://hem.passagen.se/des/hocg/hocg_1960.htm">History
+	  of computer graphics.</a><br/>
+	  - <a class="nav"
+        href="http://en.wikipedia.org/wiki/Computer_graphics#Concepts_and_principles">Short
+	  overview on Wikipedia.</a><br/>
+	  - <a class="nav"
+        href="http://design.osu.edu/carlson/history/tree/utah.html">Short
+	  history of the U in graphics.</a><br/>
+	  - <a class="nav"
+        href="http://www.sjbaker.org/wiki/index.php?title=The_History_of_The_Teapot">History
+	  of the Utah Teapot.</a><br/>
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">sildes</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L18-graphics.pdf">L18-graphics.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L19"></a>
+<h2>L19. VOLUME RENDERING | TUES NOV. 11</h2>
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	 - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 8.4.2 Arrange Spatial Data,</a> Tamara
+        Munzner.<br/>
+	 
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+ - <a class="nav"
+        href="http://www.amazon.com/Real-Time-Graphics-Klaus-Engel/dp/1568812663/ref=sr_1_1?s=books&ie=UTF8&qid=1352065653&sr=1-1&keywords=real-time+volume+graphics">Real-Time
+        Volume Graphics</a>, Chapters 1, 3, 7, and 9, Klaus Engel,
+        Markus Hadwiger, Joe Kniss, Christof Rezk-Salama, Daniel
+        Weiskopf, A K Peters, 2006<br/>
+	  - <a class="nav"
+        href="http://old.vrvis.at/via/resources/course-volgraphics-2004/">Real-Time
+        Volume Graphics (course notes)</a>,  Klaus Engel, Markus Hadwiger, Joe Kniss,
+        Aaron Lefohn, Christof Rezk-Salama and Daniel
+        Weiskopf. Original SIGGRAPH 2004 course. Also, <a class="nav"
+        href="http://www.real-time-volume-graphics.org/?page_id=28"> slides from newer coursenotes from EG 2006.</a> <br/>
+
+	 - <a class="nav" href="http://dl.acm.org/citation.cfm?doid=54852.378476">
+A rendering algorithm for visualizing 3D scalar fields.</a>
+Paolo Sabella.
+SIGGRAPH 1988: 51-58.<br/>
+	    - <a class="nav"
+        href="http://www-graphics.stanford.edu/papers/volume-cga88/">Display
+        of Surfaces from Volume Data</a>, Marc Levoy, IEEE Computer
+        Graphics and Applications, 8(3), 29-37, 1988<br/>
+	  - <a class="nav"
+        href="http://dl.acm.org/citation.cfm?id=378484">Volume
+        rendering</a>, Robert A. Drebin, Loren C. Carpenter, Pat
+        Hanrahan. SIGGRAPH Computer Graphics, Vol. 22, No. 4, August,
+        1988, pages 51-58.<br/>
+	   
+	 - <a class="nav" href="http://dl.acm.org/citation.cfm?id=97919">Footprint Evaluation for Volume Rendering,</a>
+Lee Westover.  
+ACM SIGGRAPH Computer Graphics, vol. 24, no. 4, pp. 367-376, 1990.<br/>
+
+- <a class="nav" href="http://graphics.stanford.edu/papers/shear/"> Fast Volume
+Rendering Using a Shear-Warp Factorization of the Viewing
+Transformation.</a> Lacroute, P. and Levoy, M.  in Proceedings
+of ACM SIGGRAPH 1994. pages 451-458<br/>
+
+- <a class="nav"
+href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=1196003">
+A Model for Volume Lighting and Modeling.</a> Joe Kniss, Simon Premoze,
+Charles Hansen, Peter Shirley, Allen McPherson, IEEE Transactions on
+Visualization and Computer Graphics (TVCG), Vol. 9, No. 2, April
+2003.<br/>
+
+- <a class="nav" href="http://www.sci.utah.edu/~csilva/papers/rita2005.pdf">
+A Survey of GPU-Based Volume Rendering of Unstructured Grids.</a>
+Cl&aacute;udio T. Silva, Jo&atilde;o Luiz Dihl Comba, Steven P. Callahan, F&aacute;bio F. Bernardon.
+RITA 12(2): 9-30 (2005).<br/>
+
+
+- <a class="nav" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6327240">Hierarchical Exploration of Volumes Using Multilevel Segmentation of the Intensity-Gradient Histograms,</a>
+Cheuk Yiu Ip, Amitabh Varshney, Joseph JaJa, IEEE VisWeek, 2012.
+ -- Check out the <a class="nav" href="http://www.youtube.com/watch?v=Lyb97Po2_1g">video</a>.<br/>
+	 
+	  
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="http://people.cs.clemson.edu/~levinej/courses/8810/slides/lec20.pdf">L19-volume-rendering.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+     <a name="L20"></a>
+<h2>L20. TRANSFER FUNCTION DESIGN | THURS NOV. 13</h2>
+   <table id="papers" >
+     <tr>
+        <td class="leftbr">guest</td> 
+	<td class="data"> <a class="nav"
+	  href="http://people.cs.clemson.edu/~levinej/">Dr. Josh
+	  Levine</a>,
+	  assistant professor, School of Computing, Clemson University.
+<br/> 
+</td>
+</tr>
+
+     <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	   - <a class="nav" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=920623">
+The Transfer Function Bake-Off.</a>
+Hanspeter Pfister, William E. Lorensen, Chandrajit L. Bajaj, Gordon L. Kindlmann, William J. Schroeder, Lisa Sobierajski Avila, Ken Martin, Raghu Machiraju, Jinho Lee.
+IEEE Computer Graphics and Applications 21(3): 16-22 (2001).<br/>
+	 - <a class="nav"
+        href="http://www.cs.utah.edu/~gk/papers/vv98">	Semi-Automatic
+        Generation of Transfer Functions for Direct Volume
+        Rendering</a>, Gordon Kindlmann, James Durkin, IEEE 1998
+        Symposium on Volume Visualization, pages 79-86.   <br/>
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+
+	  - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=663875">The contour spectrum.</a>, Chandrajit L. Bajaj, Valerio Pascucci, Daniel Schikore. IEEE Visualization 1997: 167-174 <br/>
+	   
+	 
+	   - <a class="nav"
+        href="http://www.cs.utah.edu/~jmk/vis01">Interactive
+        Volume Rendering Using Multi-Dimensional Transfer Functions
+        and Direct Manipulation Widgets</a>, Joe Kniss, Gordon
+        Kindlmann, Charles Hansen, IEEE Visualization 2001, pages
+        255-262. <br/>
+	   
+	 
+	  - <a class="nav"
+        href="http://www.cs.utah.edu/~gk/papers/vis03">Curvature-Based
+        Transfer Functions for Direct Volume Rendering: Methods and
+        Applications</a>, Gordon Kindlmann, Ross Whitaker, Tolga
+        Tasdizen, Torsten Möller, IEEE Visualization 2003. <br/>
+
+	- <a class="nav" href="http://www.cs.utah.edu/~jmk/papers/vis03_kniss.pdf">Gaussian Transfer Functions for Multi-Field Volume Visualization.</a>
+Joe Kniss, Simon Premoze, Milan Ikits, Aaron E. Lefohn, Charles D. Hansen, Emil Praun.
+IEEE Visualization, pp. 497-504, 2003.<br/>
+
+- <a class="nav" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1532807">Statistically Quantitative Volume Visualization.</a>
+Joe Michael Kniss, Robert L. Van Uitert Jr., Abraham Stephens, Guo-Shi Li, Tolga Tasdizen, Charles D. Hansen.
+IEEE Visualization, pp. 287-294, 2005.<br/>
+
+	   - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1703376">Local
+        Histograms for Design of Transfer Functions in Direct Volume
+        Rendering</a>, Claes Lundström, Patric Ljung, Anders
+        Ynnerman. IEEE Trans. Vis. Comput. Graph. 12(6): 1570-1579
+        2006.  <br/>
+	  
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L20-transfer-functions.pdf">L20-transfer-functions.pdf</a><br/>
+</td>
+    </tr>
+
+    </table>
+    <div class="hr"><hr /></div>
+
+    <a name="L21"></a>
+<h2>L21. VECTOR FIELDS | TUES NOV. 18</h2>
+   <table id="papers" >
+
+     <tr>
+        <td class="leftbr">guest</td> 
+	<td class="data"> <a class="nav"
+	  href="http://people.cs.clemson.edu/~levinej/">Dr. Josh
+	  Levine</a>,
+	  assistant professor, School of Computing, Clemson University.
+<br/> 
+</td>
+</tr>
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	   - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 8.5 Arrange Spatial Data,</a> Tamara
+        Munzner. <br />
+	  - <a class="nav"
+        href="http://bestphysicsvideos.blogspot.com/2012/02/flow-visualization.html">Flow Visualization.</a> Stephen Kline (National Committee for Fluid Mechanics Films). 35 min running time.
+Check out the <a class="nav"
+        href="http://web.mit.edu/hml/ncfmf/05FV.pdf" >Film Notes</a> as well.<br /> 
+	 
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav"
+        href="http://www.cs.swan.ac.uk/~cstony/research/star/">Over
+        Two Decades of Integration-Based Geometric Flow
+        Visualization.</a> Tony McLouglin, Robert S. Laramee, Ronald
+        Peikert, Frits H. Post and Min Chen. Computer Graphics Forum,
+        Vol. 29, No. 6, 2010, pages 1807-1829.<br/>  
+	   - <a class="nav"
+        href="http://dl.acm.org/citation.cfm?id=237285">Image-guided
+        streamline placement.</a> G. Turk and D. Banks. In Proceedings
+        of ACM SIGGRAPH, pages 453-460, 1996.<br/>
+	  - <a class="nav"
+        href="http://trac.assembla.com/vis_lu/export/273/Aufgabe2/res/Creating%20Evenly-Spaced%20Streamlines.pdf">Creating
+        evenly-spaced streamlines of arbitrary density.</a> B. Jobard
+        and W. Lefer. In Visualization in Scientific Computing, pages
+        43-56, 1997.<br/>
+	  - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4135666">Imaged
+        Based Streamline Generation and Rendering.</a> Liya Li and
+        Han-Wei Shen. IEEE Transactions on Visualization and Computer
+        Graphics, Vol 13, No. 3, pages 630-640, 2007.<br/>
+	   - <a class="nav"
+        href="http://www.mpi-inf.mpg.de/~weinkauf/publications/absweinkauf10c.html">Streak
+        Lines as Tangent Curves of a Derived Vector Field.</a> Tino
+        Weinkauf, Holger Theisel. IEEE
+        Trans. Vis. Comput. Graph. 16(6): 1225-1234 (2010).<br/>
+	  - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1532832">Farthest
+        Point Seeding for Efficient Placement of
+        Streamlines.</a> Abdelkrim Mebarki, Pierre Alliez, Olivier
+        Devillers. IEEE Visualization 2005: 61.<br/>
+	  - <a class="nav"
+        href="http://www.winslam.com/rlaramee/star/post03state.pdf">The
+        State of the Art in Flow Visualisation: Feature Extraction and
+        Tracking.</a> Frits H. Post, Benjamin Vrolijk, Helwig Hauser,
+        Robert S. Laramee, Helmut Doleisch. Comput. Graph. Forum
+        22(4): 775-792 (2003).<br/>    
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="http://people.cs.clemson.edu/~levinej/courses/8810/slides/lec23.pdf">L21-vector-fields.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+
+ 
+
+    <a name="L22"></a>
+<h2>L22. VISUALIZATION MODELS | THURS NOV. 20</h2>
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+ - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 4 Analysis: Four Levels for Validation,</a> Tamara
+        Munzner.<br/>	  
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  - <a class="nav"
+        href="http://vis.stanford.edu/files/2006-DesignPatterns-InfoVis.pdf">Software
+        Design Patterns for Information Visualization.</a> Jeffrey
+        Heer, Maneesh Agrawala, IEEE Trans. Visualization &
+        Comp. Graphics (Proc. InfoVis), 12(5), 853–860, 2006.<br/> 
+	  - <a class="nav"
+        href="http://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/">A
+        Nested Model for Visualization Design and Validation,</a>
+        Tamara Munzner, IEEE TVCG (Proc. InfoVis 2009), 15(6):921-928, 2009.   
+	  <br/>
+	  - <a class="nav"
+        href="http://www.cs.ubc.ca/labs/imager/tr/2013/NBGM/">The Nested
+        Blocks and Guidelines Model,</a> Miriah Meyer, Michael
+        Sedlmair, P. Samuel Quinan, and Tamara Munzner, Journal of
+        Information Visualization, 2013.    
+	  <br/>
+	  - <a class="nav"
+        href="https://www.cs.umd.edu/users/ben/papers/Shneiderman2006Strategies.pdf">Strategies
+        for Evaluating Information Visualization Tools:
+        Multi-dimensional In-depth Long-term Case Studies,</a>Ben
+        Shneiderman, Catherine Plaisant. BELIV '06 Proceedings of the
+        2006 AVI workshop on BEyond time and errors: novel evaluation
+        methods for information visualization. 
+	  <br/>
+	  - <a class="nav"
+        href="http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/">
+Design Study Methodology: Reflections from the Trenches and the
+        Stacks.</a> Michael Sedlmair, Miriah Meyer, Tamara
+        Munzner. IEEE Transactions on Visualization and Computer
+        Graphics (Proceedings of InfoVis 2012), 18(12): 2431-2440,
+        2012. 
+	  <br/>
+
+	  - <a class="nav"
+        href="http://www.jstor.org/stable/1511637">
+Wicked problems in design thinking.</a> Richard Buchanan. Design
+        Issues , Vol. 8, No. 2 (Spring, 1992), pp. 5-21. 
+	  <br/>
+	  
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">sildes</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L22-vis-models.pdf">L22-vis-models.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+       <a name="L23"></a>
+<h2>L23. TENSORS | TUES NOV. 25</h2>
+  <table id="papers" >
+    <tr>
+        <td class="leftbr">guest</td> 
+	<td class="data"> <a class="nav"
+	  href="http://people.cs.clemson.edu/~levinej/">Dr. Josh
+	  Levine</a>,
+	  assistant professor, School of Computing, Clemson University.
+<br/> 
+</td>
+</tr>
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+	  - <a class="nav"
+        href="./protected/VAD.pdf">Visualization
+        Analysis and Design, Ch. 8.6 Arrange Spatial Data,</a> Tamara
+        Munzner. <br />
+	  - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1359732">Comparing
+	  2D Vector Field Visualization Methods: A User Study.</a>
+	  David H. Laidlaw, Robert M. Kirby, Cullen D. Jackson,
+	  J. Scott Davidson, Timothy S. Miller, Marco da Silva,
+	  William H. Warren, Michael J. Tarr. IEEE
+	  Trans. Vis. Comput. Graph. 11(1): 59-70 (2005).<br /> 
+	 
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+- <a class="nav"
+        href="http://dl.acm.org/citation.cfm?id=166151">Imaging vector
+        fields using line integral convolution.</a> B. Cabral and
+        C. Leedom. in Proceedings of SIGGRAPH, pages 263-270, 1993.<br
+        />
+	  - <a class="nav"
+        href="http://www.win.tue.nl/~vanwijk/ibfv/">Image based flow
+        visualization.</a> J. van Wijk. in Proceedings of ACM
+        SIGGRAPH, pages 745-754, 2002.<br/>
+	  - <a class="nav"
+        href="http://www.winslam.com/rlaramee/star/">The State of the
+        Art in Flow Visualization: Dense and Texture-Based
+        Techniques.</a> Robert S. Laramee, Helwig Hauser, Helmut
+        Doleisch, Benjamin Vrolijk, Frits H. Post, and Daniel
+        Weiskopf. in Computer Graphics Forum (CGF), Vol. 23, No. 2,
+        2004, pages 203-221.<br/>
+	  - <a class="nav"
+        href="http://www.cs.utah.edu/~gk/papers/tvcg00">Strategies for
+        Direct Volume Rendering of Diffusion Tensor Fields,</a> Gordon
+        Kindlmann, David Weinstein, David Hart, IEEE Transactions on
+        Visualization and Computer Graphics, 6(2):124-138, April-June
+        2000.<br/>   
+	  - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4015499">Diffusion
+        Tensor Visualization with Glyph Packing,</a> Gordon Kindlmann
+        C. F. Westin, TVCG, vol.12, no.5, pp.1329-1336,
+        Sept.-Oct. 2006.<br/>
+	  - <a class="nav"
+        href="http://vis.cs.brown.edu/docs/pdf/g/Vilanova-2005-IVD.pdf.html">An
+        Introduction to Visualization of Diffusion Tensor Imaging and
+        Its Applications.</a> A. Vilanova, S. Zhang, G. Kindlmann,
+        D. Laidlaw. In J Weickert and H Hagen, editors, Visualization
+        and Processing of Tensor Fields, pages 121-153. Springer
+        Verlag, 2006.<br/>
+	  - <a class="nav"
+        href="http://slvg.soe.ucsc.edu/hyperlic.html">HyperLic.</a>
+        Xiaoqiang Zheng and Alex Pang. IEEE Visualization 2003.<br/>
+	   - <a class="nav"
+        href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=4359502">Anisotropic
+        Noise Samples for Tensor Field Visualization.</a> Feng, L.,
+        Hotz, I., Hamann, B., Joy, K.I. IEEE Transactions on
+        Visualization and Computer Graphics, 2008, Vol. 14,
+        pp. 342-354.<br/>  
+	</td>
+    </tr>
+	  
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+	  <a class="nav"
+href="http://people.cs.clemson.edu/~levinej/courses/8810/slides/lec24.pdf">L23-tensors.pdf</a><br/>
+</td>
+    </tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+
+
+
+     <a name="L24"></a>
+<h2>L24. DESIGN STUDIES | TUES DEC. 2</h2>
+   <table id="papers" >
+     
+    <tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+
+	 - <a class="nav"
+        href="http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/">
+Design Study Methodology: Reflections from the Trenches and the
+        Stacks.</a> Michael Sedlmair, Miriah Meyer, Tamara
+        Munzner. IEEE Transactions on Visualization and Computer
+        Graphics (Proceedings of InfoVis 2012), 18(12): 2431-2440,
+        2012. 
+	  <br/>
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+	  
+	  - <a class="nav" href="http://www.mizbee.org/More_Info_files/mizbee.pdf">MizBee:
+A Multiscale Synteny Browser</a>. Miriah Meyer, Tamara Munzner, and
+Hanspeter Pfister. IEEE Trans. Visualization and Computer Graphics
+	  15(6):897-904 
+(Proc. InfoVis 09), 2009.<br/>
+
+	  - <a class="nav" href="http://www.cs.ubc.ca/labs/imager/tr/2013/VariantView/">Variant View: Visualizing Sequence Variants in their Gene Context</a>. Joel A. Ferstay, Cydney B. Nielsen , Tamara Munzner. IEEE Transactions on Visualization and Computer Graphics (TVCG) 
+Proceedings of IEEE Conference on Information Visualization, Atlanta,
+	  GA, USA. 2013.<br/>
+	  - <a class="nav" href="http://aviz.fr/wiki/uploads/Research/soccerstories.pdf"> SoccerStories: A Kick-off for Soccer Visual Analysis</a>. Charles Perin, Romain Vuillemot, Jean-Daniel Fekete. Proceedings of the IEEE Transactions on Visualization and Computer Graphics (InfoVis'13), 2013.<br/>  
+	 
+	 
+	  - <a class="nav"href="http://www.cydney.org/Publications_files/Nielsen_infovis_2009.pdf">ABySS-Explorer:
+				  Visualizing genome sequence assemblies.</a> Cydney B. Nielsen, Shaun
+				  D. Jackman, Inanc Birol, Steven J.M. Jones. IEEE Transactions on
+				  Visualization and Computer Graphics (Proc InfoVis 2009) 15(6):881-8,
+				  2009.<br/>
+	  - <a class="nav"
+					   href="http://ivlab.cs.umn.edu/pubs/Keefe-2009-MultiViewVis.php">Interactive
+					   Coordinated Multiple-View Visualization of Biomechanical Motion
+					   Data.</a> Daniel F. Keefe, Marcus Ewert, William Ribarsky, Remco
+					   Chang. IEEE Trans. Visualization and Computer Graphics (Proc. Vis
+					   2009), 15(6):1383-1390,
+    2009.<br/>
+	 
+	  - <a class="nav"
+									  href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6327270">Facilitating
+									  Discourse
+									  Analysis
+									  with
+									  Interactive
+									  Visualization.</a>
+									  Jian
+									  Zhao,
+									  Chevalier,
+									  F.,
+									  Collins,
+									  C.,
+									  Balakrishnan,
+									  R. IEEE
+									  Transactions on Visualization and
+									  Computer
+									  Graphics,
+									  18(12),
+									  2012.<br/>
+
+	</td>
+    </tr>
+   
+    <tr>
+        <td class="leftbr">sildes</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L24-design-studies.pdf">L24-design-studies.pdf</a><br/>
+</Td>
+    </Tr>
+    
+    </table>
+    <div class="hr"><hr /></div>
+    
+   <a name="L25"></a>
+<h2>L25. MOLECULAR ANIMATION | THURS DEC. 4</h2>
+   <table id="papers" >
+     
+<tr>
+        <td class="leftbr">guest</td> 
+	<td class="data"> <a class="nav"
+	  href="http://biochem.web.utah.edu/iwasa/index.html">Dr. Janet Iwasa</a>,
+	  research assistant professor, Department of Biochemistry, U
+	  of Utah School of Medicine.
+<br/> 
+</td>
+</tr>
+<tr>
+        <td class="leftbr">required</td>
+	<td class="data">
+
+	 - <a class="nav"
+        href="http://www.sciencedirect.com/science/article/pii/S0962892410001558">
+Animating the model figure.</a> Janet Iwasa. Trends in Cell Biology, 2010, vol. 20, no12, pp. 699-704.
+	  <br/>
+	</td>
+    </tr>
+<tr>
+        <td class="leftbr">recommended</td>
+	<td class="data">
+
+	 - <a class="nav"
+        href="http://www.ncbi.nlm.nih.gov/pubmed/25267313">
+Crafting a career in molecular animation.</a> Janet Iwasa. Mol Biol
+        Cell. 2014 Oct 1;25(19):2891-3, 2014.
+	  <br/>
+	  - <a class="nav"
+        href="https://www.ted.com/talks/janet_iwasa_how_animations_can_help_scientists_test_a_hypothesis?language=en">
+How animations can help scientists test a hypothesis.</a> Janet's TED
+        talk, 2014.
+	  <br/>
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">sildes</td>
+	<td class="data">
+	  <a class="nav"
+href="./lectures/L25-molecular-animation.pdf">L25-molecular-animation.pdf</a><br/>
+</Td>
+    </Tr>
+ 
+     
+    </table>
+    <div class="hr"><hr /></div>
+    
+ <a name="L26"></a>
+<h2>L26. D3 + OTHER TOOLS | TUES DEC. 9</h2>
+   <table id="papers" >
+     
+
+
+        <td class="leftbr">recommended</td>
+	<td class="data">
+ - <a class="nav"
+        href="https://www.khanacademy.org/computer-programming/new/webpage">
+Khan Academy introduction to HTML and CSS.</a>
+	  <br/>
+	  - <a class="nav"
+        href="http://www.w3schools.com/js/js_intro.asp">
+W3School intro to Javascript.</a>
+	  <br/>
+	  - <a class="nav"
+        href="http://d3js.org/">
+D3 homepage.</a>
+	  <br/>
+	  <br/>
+	</td>
+    </tr>
+
+    <tr>
+        <td class="leftbr">slides</td>
+	<td class="data">
+<a class="nav"
+href="./lectures/L26-tools.pdf">L26-tools.pdf</a>
+	 
+	  <br/>
+	</td>
+    </tr>
+ 
+     
+    </table>
+    <div class="hr"><hr /></div>
+    
+  </div>
+</body>
+</html>

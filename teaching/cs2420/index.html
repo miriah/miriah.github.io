@@ -1,0 +1,591 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CS2420 | Introduction to Algorithms and Data Structures</title>
+<link href="./teaching-2420.css" rel="stylesheet" type="text/css" />
+
+
+<script language="JavaScript" type="text/javascript">
+<!-- Copyright 2005, Sandeep Gangadharan -->
+<!-- For more free scripts go to http://www.sivamdesign.com/scripts/ -->
+<!--
+if (document.getElementById) {
+document.writeln('<style type="text/css"><!--')
+document.writeln('.texter {display:none} @media print {.texter {display:block;}}')
+document.writeln('//--></style>') }
+
+function openClose(theID) {
+if (document.getElementById(theID).style.display == "block") { document.getElementById(theID).style.display = "none" }
+else { document.getElementById(theID).style.display = "block" } }
+// -->
+</script>
+
+
+</head>
+
+<body>
+    
+
+
+<h1>CS2420 | Introduction to Algorithms and Data Structures | Spring 2018 </h1>
+
+
+<div id="topper">
+   <div id="about_img">
+  <img src="./images/book-wordle.png" width="500" />
+     </div>
+
+  <div id="info">
+    <b>INSTRUCTORS:</b> </br>
+    <a class="nav"
+    href="http://www.cs.utah.edu/~miriah/">Dr. Miriah Meyer</a> &    <a class="nav"
+  href="https://www.cs.utah.edu/~parker/">Dr. Erin Parker</a><br/><br/>
+     <b>INSTRUCTION ASSISTANT:</b><br/> Ryan Sargent <br/><br/>
+  <b>LECTURES:</b> T/Th 3:40-5pm <br/>
+  <b>PLACE:</b> ASB 220 <br/><br/>
+  <b>LABS:</b> M various times <br/>
+  <b>PLACE:</b> MEB 3225 & WEB L126<br/><br/>  
+    <b>OFFICE HRS:</b></br>
+    Dr. Meyer  | W 3-5pm, WEB 4887<br/>
+    Dr. Parker | <i>varied, see Canvas</i><br/>
+    <br/>
+
+    </div>
+   
+  </div>
+
+
+  <div id="plainpage">
+
+
+  </br>
+  <p>This course provides an introduction to tools found throughout
+  computer science - basic algorithms and data structures that lend
+  themselves naturally to computational problem solving, and engineering computational efficiency into
+  programs. Students will gain an understanding of classical
+  algorithms (including sorting, searching, tree and graph traversal)
+  and data structures (including linked-lists, trees, graphs, hash
+  tables, and heaps). Students will complete extensive programming assignments
+  that require the implementation and testing of these concepts.  </p> 
+
+<a name="schedule"></a>
+<div id="project_group">
+<h1 > schedule </h1>
+
+  <table id="papers" >
+    <tr class="toprow">
+        <td class="leftcolnb">week</td>
+	<td class="midcol">date</td>
+        <td class="data">topic</td>
+	<td class="data">homework</td>
+ 	<td class="data">exams</td>
+    </tr>
+    <tr>
+        <td class="leftcol">1</td>
+	<td class="midcol">1/8 - 1/14</td>
+        <td class="data">Introduction & Java
+    review</td>
+    <td class="data">01 | Matrices | solo</td>
+    </tr>
+    <tr>
+        <td class="leftcol">2</td>
+	<td class="midcol">1/15 - 1/21</td>
+        <td class="data">OOP & generics</td>
+	<td class="data">02 | Generic Books | solo</td>
+    </tr>
+    <tr>
+        <td class="leftcol">3</td>
+	<td class="midcol">1/22 - 1/28</td>
+        <td class="data">Algorithm analysis</td>
+    <td class="data">03 | Searching a List | TBD</td>
+    <tr>
+        <td class="leftcol">4</td>
+	<td class="midcol">1/29 - 2/4</td>
+        <td class="data">Basic sorting</td>
+	<td class="data">04 | Anagrams | pair</td>
+    </tr>
+    <tr>
+        <td class="leftcol">5</td>
+	<td class="midcol">2/5 - 2/11</td>
+        <td class="data">Recursive
+    sorting</td>
+    <td class="data">05 | Quicksort and Mergesort | pair</td>
+    </tr>
+    <tr>
+        <td class="leftcol">6</td>
+	<td class="midcol">2/12 - 2/18</td>
+        <td class="data">Linked list, stacks, queues</td>
+    <td class="data">06 | TBD | TBD</td>
+    </tr>
+    <tr>
+        <td class="leftcol">7</td>
+	<td class="midcol">2/19 - 2/25</td>
+        <td class="data">Midterm</td>
+	<td class="data"></td>
+	<td class="data"><b>Exam 1 on Thursday</b></td>
+    </tr>
+
+    <tr>
+        <td class="leftcol">8</td>
+	<td class="midcol">2/26 - 3/4</td>
+        <td class="data">Trees</td>
+	<td class="data">07 | Binary Search Trees | pair</td>
+    </tr>
+    <tr>
+        <td class="leftcol">9</td>
+	<td class="midcol">3/5 - 3/11</td>
+        <td class="data">Graphs</td>
+	<td class="data">09 | PacMan! Graph Search | pair</td>
+    </tr>
+    
+    <tr>
+        <td class="leftcol">10</td>
+	<td class="midcol">3/12 - 3/18</td>
+        <td class="data">Hash tables</td>
+	<td class="data">10 | Hash Tables | solo</td>
+	
+	
+      </tr>
+
+      <tr>
+        <td class="leftcol">11</td>
+	<td class="midcol">3/19 - 3/25</td>
+        <td class="datai">spring break</td>
+	
+	
+    </tr>
+    <tr>
+        <td class="leftcol">12</td>
+	<td class="midcol">3/26 - 4/1</td>
+        <td class="data">Binary heaps</td>
+	<td class="data">11 | Binary Heaps | solo</td>
+	
+	
+    </tr>
+    <tr>
+        <td class="leftcol">13</td>
+	<td class="midcol">4/2 - 4/8</td>
+        <td class="data">Final project</td>
+    <td class="data">12 | TBD | pair</td>
+  </tr>
+  
+    <tr>
+        <td class="leftcol">14</td>
+	<td class="midcol">4/9 - 4/15</td>
+        <td class="data">Huffman compression</td>
+	
+    </tr>
+    <tr>
+        <td class="leftcol">15</td>
+	<td class="midcol">4/16 - 4/22</td>
+	<td class="data">Ethics</td>
+	<td class="data">13 | TBD | TBD</td>
+	
+    </tr>
+    <tr>
+        <td class="leftcol">16</td>
+	<td class="midcol">4/23 - 4/29</td>
+        <td class="data">Wrap-up & review</td>
+    <td class="data"></td>
+	<td class="data"><b>Final on Apr 30th at 3:30pm</b></td>
+    </tr>
+    
+    
+    
+    
+</table>
+</div>
+
+
+<a name="syllabus"></a>
+<div id="project_group">
+<h1>syllabus </h1>
+
+   <table id="syllabus" >
+
+     <tr>
+        <td class="leftb">prerequisites</td>
+	<td class="data"><p>Students are expected to have a working
+        knowledge of Java and to be able to complete the tasks
+        required in CS 1410.  </p></td> 
+    </tr>
+    
+    <tr>
+        <td class="leftb">objectives</td>
+	<td class="data">
+	  The following are the expected outcomes for students completing this course:
+	  <ul>
+	    <li> Students will learn algorithms for basic searching
+    and sorting, as well as the
+    asymptotic behavior of each.
+	    <li>Students will become proficient implementing and using
+        basic data structures fundamental to computer
+    science including arrays, linked lists, stacks, queues, graphs,
+    trees, binary search trees, Huffman trees, hash tables, binary
+    heaps, and priority queues. Students will reason about the
+    asymptotic behavior of basic operations on these data structures.
+	    <li>Students will regularly evaluate their solutions for
+    efficiency through written reports. Evaluations will summarize
+    efficiency in time (Big-O and/or actual running time), efficiency
+    in space (memory requirements), and/or programmer efficiency
+    (ease of implementation and maintenance) of solutions.
+	    <li>Students will improve on the object-oriented
+    programming skills learned in CS 1410. Student understanding of
+    the concepts of inheritance, polymorphism, and generic programming
+    will be strengthened significantly by creating solutions with
+    multiple levels of inheritance and by implementing generic
+    versions of data structures.
+	    <li>Students will gain experience using and implementing
+    recursion. Students will also be introduced to dynamic
+    programming. Students will learn when to apply iteration or
+    dynamic programming instead of recursion.
+	    <li>Students will methodically test their solutions
+    according to a variety of testing models including white-box
+    testing, black-box testing, and unit tests.
+	    <li>Students will gain experience designing, implementing,
+    and testing solutions in pairs using the techniques of pair
+    programming.
+	    </ul>
+	</td> 
+    </tr>
+
+    <tr>
+      <td class="leftb">textbook</td>
+      <td class="data">
+	<p>There is no required textbook for this course. We will
+      recommend online sources throughout the semester.</p> 
+	</td> 
+    </tr>
+
+    <tr>
+      <td class="leftb">software</td>
+      <td class="data">
+	<p>We will use the web-based <a class="nav"
+  href="https://www.polleverywhere.com">PollEverywhere</a> software
+      during lectures for asking and answering questions. At the start
+      of each class we will provide the relevant URL. While not required, we encourage
+      students to bring a web-enabled device to the lectures to make use this technology. 
+	</td> 
+      </tr>
+
+      <tr>
+      <td class="leftb">videos of lectures</td>
+      <td class="data">
+	<p>We will be experimenting with live-streaming and recording
+      of lectures via YouTube. You can find links for the videos in
+      the <a class="nav"
+  href="https://utah.instructure.com/courses/476999/modules">weekly
+      modules on Canvas</a>. The videos are meant as an additional
+      resource for you to review lecture content. They are not a
+      substitute for attending lectures. <b>BE AWARE: Our recording process WILL
+      fail at some point during the semester, so do not rely on videos
+      for receiving lecture content.</b>
+	</td> 
+    </tr>
+
+    <tr>
+      <td class="leftb">online resources</td>
+      <td class="data">
+
+	<p><a class="nav"
+  href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Download:
+  Java SDK 8</a><br/> 
+	<a class="nav"
+  href="http://www.eclipse.org/downloads/">Download:
+  Eclipse IDE for Java developers</a><br/>
+		
+	<a class="nav"
+  href="http://docs.oracle.com/javase/8/docs/api/">Java API
+	documentation</a><br/>
+	<a class="nav"
+  href="http://docs.oracle.com/javase/tutorial/index.html">The
+	official Java tutorials</a><br/>
+
+	<p>
+	<a class="nav"
+	href="http://www.leepoint.net">Java notes</a><br/>
+
+	<a class="nav"
+  href="https://learnxinyminutes.com/docs/java/">Learn Java in Y minutes</a><br/>
+
+	<a class="nav"
+	href="http://codingbat.com/java">Coding practice in Java</a><br/>
+
+	<a class="nav"
+  href="https://www.youtube.com/watch?v=k7XXoj0_UXM&feature=youtu.be">JUnit
+  4 Basics in Eclipse video</a><br/> 
+
+	<a class="nav"
+  href="http://comparelanguages.blogspot.com">A
+	comparison of Java, C++, and Python</a><br/></p>
+
+	<p>
+	<a class="nav"
+	href="http://opendatastructures.org">Open Data Structures </a><br/>
+	
+	</p>
+	</td>
+    </tr>
+
+     <tr>
+       <td class="leftb">grading</td>
+       <td class="data">
+	 <p>Grades in this course will be determined by:
+	 <ul>
+	   <li> 50% assignments
+	   <li> 40% exams (2)
+	   <li> 10% participation and labs
+	 </ul>
+	 </p>
+	 
+	 <p> Assignments consist of weekly programming assignments,
+	 some of which will be done in pairs. The specifications of
+	 these assignments will be posted online each week. The
+	 assignments will be due a week + a day after they are
+	 released, with the exception of the second and final assignments which
+	 will be due two weeks after release. <b>ASSIGNMENTS WILL NOT
+	 BE ACCEPTED AFTER THE DEADLINE. NO EXCEPTIONS.</b>
+
+	 <p>You will hand in your programs
+	 through the course <a class="nav"
+  href="https://utah.instructure.com/courses/476999">
+	 Canvas page</a>. Partial credit may be given for incorrect
+	 programs, but it must be clear that a strong attempt was
+	 made. If your program does not compile or run, no credit will
+	 be given. Programs will be graded on readability, comments,
+	 and design of the code, as well as correctness in
+	 execution. Assignments will also consist of a written portion
+	 describing the design of the program, and documenting the
+	 performance of your code. All reports must be typed - no
+	 scanned handwritten work will be accepted. If you wish
+	 to appeal a score on an assignment (or a test) must do so
+	 within one week of receiving the score and use the <a class="nav"
+  href="https://utah.instructure.com/courses/476999/quizzes/1124595?module_item_id=6671715">regrade 
+	 request form</a> posted on the class website.</p>  
+
+	 <p> The last assignment of the semester will be a
+	  comprehensive project lasting two weeks, in which you will
+	  design a solution to a problem from the ground up, with
+	  little or no framework given to you. You will have the
+	  freedom of selecting which algorithms and data structures
+	  are best suited to solving the problem, and designing a
+	  complete program around your solution. </p> 
+	  
+	  <p> <b>Two exams will be given</b> - one during the regular class
+	  time, and one during finals week. The in class exam will
+	  take place on <b>Thursday, February 22nd</b>, an the final exam will take
+	  place on <b>Monday, April 30th from 3:30-5:30pm</b>. All exams are written exams. As an
+	  anti-cheating measure, students who fail the exams will fail
+	  the class regardless of their assignment scores. </p> 
+
+	  <p> The class participation grade will be based on
+	  completion of lab exercises and
+	  overall contribution to the 
+	  class and labs. </p>
+
+	  <p> The final grade will be calculated from exams,
+	  programming assignments, written homework, and laboratory
+	  exercises. A's will be given to students within 90%, B's
+	  within 80%, C's within 70% etc. We do, however, reserve the
+	  right to adjust this loose scale if need be.</p>
+    </td> </tr>
+
+     <tr>
+      <td class="leftb">getting help</td>
+      <td class="data">
+	<p>Every student will get stuck sooner or later. When you do,
+      feel free to ask for help in person or through the class
+      website. We are happy to help. A <a class="nav"
+  href="https://utah.instructure.com/courses/476999/pages/instructions-on-how-to-get-help?module_item_id=6670752"> 
+      complete list of ways to 
+	receive help</a> is on Canvas. </p>
+
+	
+
+	<p>In-person help is the most effective way to learn. Please
+	make use of our office hours whenever possible. TAs will hold
+	their office hours in the CADE lab, WEB L224 and WEB L226. When
+	you arrive for TA hours, use the <a class="nav"
+  href="http://nine.eng.utah.edu/schools/uofu/miriah/CS2420/login">TA
+	call queue</a> to 
+	request TA help.</p>
+
+
+
+<p>	If you have a question, especially about an assignment, check
+  out the recent activity in <a class="nav" 
+  href="https://utah.instructure.com/courses/476999/discussion_topics"> 
+  Canvas discussion board</a>. See if your question has already been
+  asked (and possibly answered). If not, reply to a discussion already
+  started for the current assignment or add a new discussion with an
+  informative title. Your question will be answered by another
+  student, a TA, or an instructor. Furthermore, the entire class will
+  benefit from seeing this Q&A. <b>Confine your posts to questions, concepts, and arranging study
+	groups. When posting, do not post solutions to problems or
+	share significant pieces of code. </b></p>
+	
+	<p>If you have a question that should not be read by the
+  entire class, you can reach the course staff via email at <a
+  class="nav" 
+  href="mailto:teach-cs2420@list.utah.edu">teach-cs2420@list.utah.edu</a>. Emails
+  to this address will be sent to all of the teaching staff and you
+  can expect to receive a response within 24 hours.</p>
+
+	<p>Emails directed to Drs. Meyer and Parker personally will be
+	read as
+	quickly as possible. However, we get thousands
+	of emails each semester and you may not get an immediate response. For
+	time sensitive issues or issues that require a little more
+	privacy, please talk to the teaching staff immediately after
+	class, come to
+	 office hours, or use one of the methods described above.</p>
+
+	<p><a class="nav"
+  href="http://nine.eng.utah.edu/schools/uofu/miriah/CS2420/login">TA
+	call queue</a><br/>
+	<a class="nav"
+  href="https://utah.instructure.com/courses/476999/discussion_topics">
+  Canvas discussion board</a><br/>
+	<a class="nav"
+  href="mailto:teach-cs2420@list.utah.edu">teach-cs2420@list.utah.edu</a></p>
+
+	</td> 
+      </tr>
+
+       <tr>
+      <td class="leftb">inclusivity</td>
+      <td class="data">
+	<p>It is our intent that students from all diverse backgrounds
+      and perspectives be well-served by this course, that students'
+      learning needs be addressed both in and out of class, and that
+      the diversity that the students bring to this class be viewed as
+      a resource, strength and benefit. It is our intent to
+      present materials and activities that are respectful of
+      diversity: gender identity, sexuality, disability, age,
+      socioeconomic status, ethnicity, race, nationality, religion,
+      and culture. 
+	</p>
+
+	<p>We also except students to treat others in the class,
+	including the teaching staff, with the same level of
+	respect.</p>
+
+<p> Your suggestions on how we can make the course more inclusive and
+	welcoming are encouraged and appreciated. You can give us
+	feedback in person during office hours, or <a class="nav"
+  href="https://docs.google.com/forms/d/e/1FAIpQLSc9TBg2lbQLiFDNK2gwUbX9zHPBgM6nzvsJaA09wfRzqkCMgg/viewform">through
+	our 
+	anonymous form.</a>
+
+<p>
+We take incidents of discrimination, bias, and harassment
+	seriously. We will file reports with the  <a class="nav"
+  href="https://oeo.utah.edu">Office or Equal
+	Opportunity, Affirmative Action, and Title IX (OEO)</a> about such
+	incidents. If you are unsure what differentiates free speech
+	and professional behavior from discrimination, bias, and
+	harassment we are happy to have an open, judgement-free, and
+	confidential conversation with you, or refer you to the OEO. </p>
+
+<p>
+<a class="nav"
+  href="https://studentaffairs.utah.edu/_documents/10-17-17-statement-by-university-leaders.pdf">U
+	of U Inclusivity Statement</a> <br/>
+	<a class="nav"
+  href="http://diversity.utah.edu/centers/cesa/">Center
+  for Ethnic Student Affairs </a> <br/>
+	<a class="nav"
+  href="https://lgbt.utah.edu">LGBT
+  Resource Center</a> <br/> 
+	<a class="nav"
+  href="http://diversity.utah.edu/centers/airc/">American
+  Indian Resource Center</a> <br/> 
+<a class="nav"
+  href="https://oeo.utah.edu">Office
+  of Equal Opportunity, Affirmative Action, and Title IX </a> <br/>
+<a class="nav"
+  href="http://wellness.utah.edu">Center
+  for Student Wellness</a> <br/> 
+
+</p>
+
+	
+</td>
+    	</td> 
+      </tr>
+
+    <tr>
+      <td class="leftb">pair programming</td>
+      <td class="data">
+	<p>About half of the assignments will be completed in pairs -
+      each assignment specification will clearly state when work must 
+      be done individually or in pairs. When pair-work is required,
+      students must adhere to the <a class="nav"
+  href="https://utah.instructure.com/files/73328920/download?download_frd=1">techniques
+      of pair 
+      programming</a>. Partners are required to contribute 
+      equally half of the work and problem solving required for each
+      assignment. Students are encouraged to discuss high-level
+      solution strategies with fellow classmates, but each student is
+      responsible for writing her/his own answer.</p>
+	<p><b>Note that the
+      teaching staff will
+      not answer questions on pair programming assignments unless both
+      partners are present.</b> </p>   
+	</td> 
+    </tr>
+
+    
+     <tr>
+        <td class="leftb">cheating policy</td>
+	<td class="data">
+	  <p> Cheating is: sharing (outside of a partnership) written
+        or electronic work either by copying, retyping, looking at, or
+        supplying a copy. And by copy, we mean a copy that belongs to someone
+        else, or your own copy from a previous instantiation of this
+        course. Cheating is not: discussing concepts, 
+        answering questions about concepts or clarifying ambiguities,
+        or helping someone understand how to use the class tools and
+        software. There must be no collaboration during tests or the
+        final exam. There is a <a class="nav"
+  href="https://utah.instructure.com/files/73208026/download?download_frd=1">detailed
+        policy that defines cheating  
+        for this course</a>. Any
+        student found cheating will fail the course. Supplying cheated
+        materials is considered cheating just as using them is.</p> 
+	  
+
+<p><a class="nav"
+  href="http://www.cs.utah.edu/docs/misc/cheating_policy.pdf">School
+  of Computing Policy Statement on Academic Misconduct</a></p>
+	  </td>
+	</tr>
+
+	 <tr>
+        <td class="leftb">soc and coe guidelines</td>
+	<td class="data">
+	  <p> Students taking courses in, or seeking degrees from, the
+        School of Computing (SoC) and the College of Engineering
+        (CoE), must be aware of their guidelines and policies.</p>  
+	  
+
+<a class="nav"
+  href="https://www.cs.utah.edu/~germain/SoC_Guidelines">School
+	  of Computing Guidelines</a><br/>
+
+	  <a class="nav"
+  href="https://www.coe.utah.edu/wp-content/uploads/pdf/faculty/semester_guidelines.pdf">College
+  of Engineering Guidelines</a>
+	  </td>
+    </tr>
+   
+</table>
+</div>
+
+
+  
+  </div>
+</body>
+</html>
